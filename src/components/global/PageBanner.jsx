@@ -10,7 +10,7 @@ const PageBanner = ({
   breadcrumbs = [],
 }) => {
   return (
-    <section className="w-full bg-linear-to-b from-[#8a29660e] to-white pt-28 pb-10 px-4">
+    <section className="w-full bg-linear-to-b from-[#8a29660e] to-white pt-44 px-4">
 
       <div className="max-w-7xl mx-auto">
 
@@ -52,11 +52,11 @@ const PageBanner = ({
           </h1>
 
           {/* Small Line */}
-          <div className="hidden md:block w-20 h-px bg-black/10"></div>
+          {/* <div className="hidden md:block w-20 h-px bg-black/10"></div> */}
         </div>
 
         {/* Bottom Border */}
-        <div className="mt-8 h-px w-full bg-black/8"></div>
+        {/* <div className="mt-8 h-px w-full bg-black/8"></div> */}
       </div>
     </section>
   );
