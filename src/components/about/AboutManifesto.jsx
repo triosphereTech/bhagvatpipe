@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutManifesto = () => {
   return (
-    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-4 py-20 overflow-hidden">
 
       <div className="max-w-5xl mx-auto text-center">
 

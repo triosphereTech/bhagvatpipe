@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 pt-20 sm:pt-24 lg:pt-28 pb-10">
 
         {/* TOP */}
-        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-20">
+        <div className="grid lg:grid-cols-[1.0fr_0.9fr] gap-20">
 
           {/* LEFT */}
           <div>
@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="text-[48px] leading-[0.92] sm:text-[72px] md:text-[92px] lg:text-[110px] font-semibold tracking-[-0.03em] text-white">
+            <h2 className="text-5xl md:text-6xl xl:text-6xl font-semibold tracking-[-0.03em] text-white">
 
               Building
               <br />
@@ -142,7 +142,7 @@ const Footer = () => {
 
               </p>
 
-              <div className="grid sm:grid-cols-3 gap-8">
+              <div className="grid sm:grid-cols-2 gap-5">
 
                 {/* Phone */}
                 <div className="flex items-start gap-4">
@@ -191,7 +191,9 @@ const Footer = () => {
                 </div>
 
                 {/* Location */}
-                <div className="flex items-start gap-4">
+              
+              </div>
+                <div className="flex items-start gap-4 pt-8">
 
                   <div className="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center shrink-0">
 
@@ -212,7 +214,6 @@ const Footer = () => {
                     </h4>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

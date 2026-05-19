@@ -10,7 +10,7 @@ const waterThoughts = [
 
 const WaterAwareness = () => {
   return (
-    <section className="w-full bg-linear-to-b from-[#8a29660e] to-white px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-linear-to-b from-[#8a29660e] to-white px-4  overflow-hidden">
 
       <div className="max-w-6xl mx-auto">
 
@@ -31,7 +31,7 @@ const WaterAwareness = () => {
         {/* Main Heading */}
         <div className="mt-8 text-center">
 
-          <h2 className="text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="text-5xl md:text-6xl xl:text-5xl leading-tight tracking-tight font-semibold text-black">
 
             “भागवत पाइप:
             <span className="text-[#8a2967]">

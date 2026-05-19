@@ -28,7 +28,7 @@ const AboutHero = () => {
             </div>
 
             {/* Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight text-black">
+            <h1 className="text-5xl md:text-6xl xl:text-5xl font-semibold leading-tight tracking-tight text-black">
 
               Building Strong &
               Reliable

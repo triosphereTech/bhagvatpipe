@@ -7,20 +7,15 @@ import DrainageImg from "../../../public/Images/home/cardbg.png";
 
 const ApplicationsSection = () => {
   return (
-    <section className="w-full bg-linear-to-b from-[#8a29660e] to-white px-4 py-24 md:py-32 overflow-hidden">
+    <section className="w-full bg-linear-to-b from-[#8a29660e] to-white px-4  overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
         {/* TOP HEADING */}
         <div className="text-center max-w-5xl mx-auto">
 
-          <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-[#8a2967]/60 font-medium">
-
-            Applications
-
-          </p>
-
-          <h2 className="text-3xl md:text-4xl lg:text-7xl font-semibold tracking-normal text-black ">
+        
+          <h2 className="text-5xl md:text-6xl xl:text-6xl font-semibold tracking-normal text-black ">
 
             Built For
             <br />
@@ -62,7 +57,7 @@ const ApplicationsSection = () => {
 
             </p>
 
-            <h3 className="text-[42px] sm:text-[56px] lg:text-[72px] leading-[0.95] tracking-[-0.05em] font-semibold ">
+            <h3 className="text-3xl md:text-4xl xl:text-5xl leading-[0.95] font-semibold ">
 
               Smart Plumbing
               Solutions For
@@ -92,7 +87,7 @@ const ApplicationsSection = () => {
 
             </p>
 
-            <h3 className="text-[42px] sm:text-[56px] lg:text-[72px] leading-[0.95] tracking-[-0.05em] font-semibold ">
+            <h3 className="text-3xl md:text-4xl xl:text-5xl leading-[0.95] font-semibold ">
 
               Engineered For
               Heavy-Duty

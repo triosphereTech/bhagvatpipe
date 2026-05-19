@@ -21,7 +21,7 @@ const stats = [
 
 const AboutStory = () => {
   return (
-    <section className="w-full bg-white px-4 py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <section className="w-full bg-white px-4  overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
@@ -40,7 +40,7 @@ const AboutStory = () => {
         {/* Main Story */}
         <div className="mt-8 max-w-5xl">
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="text-5xl md:text-6xl xl:text-4xl leading-tight tracking-tight font-semibold text-black">
 
             Bhagvat Pipes was built with a vision to deliver
 

@@ -37,13 +37,13 @@ const CTASection = () => {
               </div>
 
               {/* Heading */}
-              <h2 className="text-[46px] leading-[0.92] sm:text-[68px] md:text-[86px] lg:text-[100px] font-semibold tracking-wide text-black">
+              <h2 className=" leading-[0.92]text-5xl md:text-6xl xl:text-6xl font-semibold tracking-wide text-black">
 
-                Become A
+                Become a
                 <br />
 
                 Bhagvat
-                <br />
+               
 
                 Partner
 

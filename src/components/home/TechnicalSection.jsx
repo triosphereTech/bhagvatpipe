@@ -73,10 +73,10 @@ const TechnicalSection = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="text-[46px] leading-[0.92] sm:text-[68px] md:text-[88px] lg:text-[95px] font-semibold tracking-2 text-[#0e0e0e]">
+            <h2 className="text-5xl md:text-6xl xl:text-6xl font-semibold tracking-2 text-[#0e0e0e]">
 
               Built To
-              <br />
+            
 
               Handle
               <br />
@@ -85,7 +85,7 @@ const TechnicalSection = () => {
               <br />
 
               Heat &
-              <br />
+            
 
               Time</span>
 

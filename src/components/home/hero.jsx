@@ -29,7 +29,7 @@ const Hero = () => {
               </div>
 
               {/* Heading */}
-              <h1 className="max-w-[620px] font-semibold text-[52px] leading-[0.95] sm:text-[64px] md:text-[74px] xl:text-[82px] tracking-wide text-black">
+              <h1 className="max-w-[620px] font-semibold text-5xl md:text-6xl xl:text-6xl leading-[0.95] tracking-wide text-black">
                 Strong Pipes
                 <br />
                 For Modern

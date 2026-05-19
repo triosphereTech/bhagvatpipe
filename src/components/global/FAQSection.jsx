@@ -43,7 +43,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="w-full bg-white px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-white px-4  overflow-hidden">
 
       <div className="max-w-6xl mx-auto">
 
@@ -61,7 +61,7 @@ const FAQSection = () => {
             </p>
           </div>
 
-          <h2 className="mt-7 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="mt-7 text-5xl md:text-6xl xl:text-6xl leading-tight tracking-tight font-semibold text-black">
 
             Everything You Need
             <br />
@@ -136,14 +136,14 @@ const FAQSection = () => {
         </div>
 
         {/* Bottom Typography */}
-        <div className="mt-20 overflow-hidden">
+        {/* <div className="mt-20 overflow-hidden">
 
           <h3 className="text-5xl sm:text-7xl lg:text-9xl font-semibold tracking-tight text-black/[0.04] whitespace-nowrap">
 
             RELIABLE INFRASTRUCTURE
 
           </h3>
-        </div>
+        </div> */}
       </div>
     </section>
   );

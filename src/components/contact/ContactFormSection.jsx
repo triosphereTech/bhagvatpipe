@@ -8,12 +8,12 @@ import {
 
 const ContactFormSection = () => {
   return (
-    <section className="w-full bg-[#8a29660e] px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bh-linear-to-b from-white to-[#8a29660e] px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
         {/* Main Layout */}
-        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-14">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14">
 
           {/* LEFT - FORM */}
           <div className="rounded-[36px] border border-black/10 bg-white p-6 sm:p-8 lg:p-10">
@@ -51,100 +51,125 @@ const ContactFormSection = () => {
             </div>
 
             {/* Form */}
-            <form className="mt-10 space-y-5">
+            {/* Form */}
+<form className="mt-8 space-y-4">
 
-              {/* Name */}
-              <div>
+  {/* First + Last Name */}
+  <div className="grid sm:grid-cols-2 gap-4">
 
-                <label className="block text-sm font-medium text-black mb-3">
+    {/* First Name */}
+    <div>
 
-                  Full Name
+      <label className="block text-[13px] font-medium text-black mb-2">
 
-                </label>
+        First Name
 
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="w-full h-14 rounded-2xl border border-black/10 px-5 text-black placeholder:text-black/35 outline-none focus:border-[#8a2967] transition-all duration-300"
-                />
-              </div>
+      </label>
 
-              {/* Phone */}
-              <div>
+      <input
+        type="text"
+        placeholder="First name"
+        className="w-full h-12 rounded-xl border border-black/10 px-4 text-[15px] text-black placeholder:text-black/30 outline-none focus:border-[#8a2967] transition-all duration-300"
+      />
+    </div>
 
-                <label className="block text-sm font-medium text-black mb-3">
+    {/* Last Name */}
+    <div>
 
-                  Phone Number
+      <label className="block text-[13px] font-medium text-black mb-2">
 
-                </label>
+        Last Name
 
-                <input
-                  type="text"
-                  placeholder="Enter phone number"
-                  className="w-full h-14 rounded-2xl border border-black/10 px-5 text-black placeholder:text-black/35 outline-none focus:border-[#8a2967] transition-all duration-300"
-                />
-              </div>
+      </label>
 
-              {/* Email */}
-              <div>
+      <input
+        type="text"
+        placeholder="Last name"
+        className="w-full h-12 rounded-xl border border-black/10 px-4 text-[15px] text-black placeholder:text-black/30 outline-none focus:border-[#8a2967] transition-all duration-300"
+      />
+    </div>
+  </div>
 
-                <label className="block text-sm font-medium text-black mb-3">
+  {/* Phone + Email */}
+  <div className="grid sm:grid-cols-2 gap-4">
 
-                  Email Address
+    {/* Phone */}
+    <div>
 
-                </label>
+      <label className="block text-[13px] font-medium text-black mb-2">
 
-                <input
-                  type="email"
-                  placeholder="Enter email address"
-                  className="w-full h-14 rounded-2xl border border-black/10 px-5 text-black placeholder:text-black/35 outline-none focus:border-[#8a2967] transition-all duration-300"
-                />
-              </div>
+        Phone Number
 
-              {/* Company */}
-              <div>
+      </label>
 
-                <label className="block text-sm font-medium text-black mb-3">
+      <input
+        type="text"
+        placeholder="Phone number"
+        className="w-full h-12 rounded-xl border border-black/10 px-4 text-[15px] text-black placeholder:text-black/30 outline-none focus:border-[#8a2967] transition-all duration-300"
+      />
+    </div>
 
-                  Company Name
+    {/* Email */}
+    <div>
 
-                </label>
+      <label className="block text-[13px] font-medium text-black mb-2">
 
-                <input
-                  type="text"
-                  placeholder="Enter company name"
-                  className="w-full h-14 rounded-2xl border border-black/10 px-5 text-black placeholder:text-black/35 outline-none focus:border-[#8a2967] transition-all duration-300"
-                />
-              </div>
+        Email Address
 
-              {/* Message */}
-              <div>
+      </label>
 
-                <label className="block text-sm font-medium text-black mb-3">
+      <input
+        type="email"
+        placeholder="Email address"
+        className="w-full h-12 rounded-xl border border-black/10 px-4 text-[15px] text-black placeholder:text-black/30 outline-none focus:border-[#8a2967] transition-all duration-300"
+      />
+    </div>
+  </div>
 
-                  Message
+  {/* Company */}
+  <div>
 
-                </label>
+    <label className="block text-[13px] font-medium text-black mb-2">
 
-                <textarea
-                  rows={5}
-                  placeholder="Write your message..."
-                  className="w-full rounded-2xl border border-black/10 px-5 py-4 text-black placeholder:text-black/35 outline-none resize-none focus:border-[#8a2967] transition-all duration-300"
-                />
-              </div>
+      Company Name
 
-              {/* Submit */}
-              <button
-                type="submit"
-                className="group mt-3 h-14 px-7 rounded-full bg-[#8a2967] text-white text-base font-medium flex items-center gap-3 hover:scale-[1.02] transition-all duration-300"
-              >
+    </label>
 
-                Send Inquiry
+    <input
+      type="text"
+      placeholder="Company name"
+      className="w-full h-12 rounded-xl border border-black/10 px-4 text-[15px] text-black placeholder:text-black/30 outline-none focus:border-[#8a2967] transition-all duration-300"
+    />
+  </div>
 
-                <HiOutlineArrowRight className="text-lg group-hover:translate-x-1 transition-all duration-300" />
+  {/* Message */}
+  <div>
 
-              </button>
-            </form>
+    <label className="block text-[13px] font-medium text-black mb-2">
+
+      Message
+
+    </label>
+
+    <textarea
+      rows={3}
+      placeholder="Write your message..."
+      className="w-full rounded-xl border border-black/10 px-4 py-3 text-[15px] text-black placeholder:text-black/30 outline-none resize-none focus:border-[#8a2967] transition-all duration-300"
+    />
+  </div>
+
+  {/* Button */}
+  <button
+    type="submit"
+    className="group mt-1 h-12 px-6 rounded-full bg-[#8a2967] text-white text-sm font-medium flex items-center gap-3 hover:scale-[1.02] transition-all duration-300"
+  >
+
+    Send Inquiry
+
+    <HiOutlineArrowRight className="text-base group-hover:translate-x-1 transition-all duration-300" />
+
+  </button>
+</form>
           </div>
 
           {/* RIGHT - MAP */}

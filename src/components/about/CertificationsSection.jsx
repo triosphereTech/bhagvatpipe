@@ -39,7 +39,7 @@ const CertificationsSection = () => {
             </p>
           </div>
 
-          <h2 className="mt-7 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="mt-7 text-5xl md:text-6xl xl:text-5xl leading-tight tracking-tight font-semibold text-black">
 
             Certified &
             <span className="text-[#8a2967]">

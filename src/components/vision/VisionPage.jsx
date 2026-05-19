@@ -52,7 +52,7 @@ const VisionPage = () => {
     <section className="w-full bg-white overflow-hidden">
 
       {/* HERO */}
-      <section className="w-full px-4 pt-28 sm:pt-32 lg:pt-36 pb-20 sm:pb-24">
+      <section className="w-full px-4 pt-16 pb-20 sm:pb-24">
 
         <div className="max-w-7xl mx-auto">
 
@@ -74,7 +74,7 @@ const VisionPage = () => {
               </div>
 
               {/* Heading */}
-              <h1 className="mt-8 text-5xl sm:text-6xl lg:text-8xl leading-[0.95] tracking-[-0.04em] font-semibold text-black">
+              <h1 className="mt-8 text-5xl md:text-6xl xl:text-6xl leading-[0.95]  font-normal text-black">
 
                 Building
                 <br />
@@ -103,8 +103,7 @@ const VisionPage = () => {
                 India’s most trusted provider of
                 innovative CPVC and UPVC piping
                 systems, delivering sustainable,
-                efficient, and high-performance
-                infrastructure solutions for generations.
+                efficient.
 
               </p>
 
@@ -153,13 +152,13 @@ const VisionPage = () => {
           {/* Bottom Line */}
           <div className="mt-20 border-t border-black/10 pt-10">
 
-            <p className="max-w-5xl text-2xl sm:text-3xl lg:text-4xl leading-[1.4] tracking-tight text-black/75 font-medium">
+            <p className="max-w-5xl text-5xl md:text-6xl xl:text-3xl leading-[1.4] tracking-tight text-black/75 font-medium">
 
-              “To maximize product placement and
+              To maximize product placement and
               expand the range of premium CPVC and
               UPVC solutions while becoming India’s
               No.1 name in quality, innovation, and
-              infrastructure excellence.”
+              infrastructure excellence.
 
             </p>
           </div>
