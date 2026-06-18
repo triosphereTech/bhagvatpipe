@@ -45,7 +45,7 @@ const PageBanner = ({
         {/* Title */}
         <div className="mt-5 flex items-end justify-between gap-6">
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-[-0.04em] text-black">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-black">
 
             {title}
 

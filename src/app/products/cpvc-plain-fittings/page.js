@@ -7,7 +7,7 @@ function page() {
   return (
     <>
     <PageBanner
-        title="C-PVC Plumbing Pipe"
+        title="C-PVC Plain Fittings Pipe"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Products", href: "/products" },

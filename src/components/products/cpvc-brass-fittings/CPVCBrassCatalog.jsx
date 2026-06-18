@@ -9,33 +9,37 @@ import {
   HiOutlineBars3,
 } from "react-icons/hi2";
 
-import ProductImg from "../../../../public/Images/home/fitting.png";
+import ImgBrassElbow from "../../../../public/Images/products/cpvc/brass/Brass_Elbow.jpeg";
+import ImgBrassFit from "../../../../public/Images/products/cpvc/brass/Brass_Fit.png";
+import ImgBrassFTA from "../../../../public/Images/products/cpvc/brass/Brass_FTA.png";
+import ImgBrassMTA from "../../../../public/Images/products/cpvc/brass/Brass_MTA.png";
 
 const products = [
   {
     title: "CPVC Brass Elbow",
     desc: "Used for changing pipeline direction with strong brass-reinforced connectivity.",
+    img: ImgBrassElbow,
   },
-
   {
     title: "CPVC Brass Tee",
     desc: "Three-way fitting designed for efficient water flow distribution systems.",
+    img: ImgBrassFit,
   },
-
   {
     title: "CPVC Brass M.T.A.",
     desc: "Connects C-PVC pipes with threaded metal fittings securely and efficiently.",
+    img: ImgBrassMTA,
   },
-
   {
     title: "CPVC Brass F.T.A.",
     desc: "Female threaded adapter for secure pipe-to-threaded fitting connections.",
+    img: ImgBrassFTA,
   },
-
-  {
-    title: "C-PVC Concealed Valve",
-    desc: "Premium concealed valve solution for modern plumbing infrastructure systems.",
-  },
+  // {
+  //   title: "C-PVC Concealed Valve",
+  //   desc: "Premium concealed valve solution for modern plumbing infrastructure systems.",
+  //   img: ImgBrassFit,
+  // },
 ];
 
 const CPVCBrassCatalog = () => {
@@ -73,14 +77,6 @@ const CPVCBrassCatalog = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-
-            {/* <p className="max-w-xl text-lg leading-8 text-black/60">
-
-              Durable brass-reinforced fittings
-              engineered for secure plumbing
-              connections and high-pressure systems.
-
-            </p> */}
 
             {/* Toggle */}
             <div className="relative flex items-center rounded-full border border-black/10 bg-[#8a29660e] p-1 w-fit overflow-hidden">
@@ -141,18 +137,16 @@ const CPVCBrassCatalog = () => {
                 {/* Image Area */}
                 <div className="relative h-[260px] overflow-hidden">
 
-                  {/* Background Text */}
                   <h3 className="absolute inset-0 flex items-center justify-center text-[70px] font-semibold tracking-tight text-[#8a2967]/[0.04] pointer-events-none">
 
                     BRASS
 
                   </h3>
 
-                  {/* Product Image */}
                   <div className="relative z-10 w-full h-full p-10">
 
                     <Image
-                      src={ProductImg}
+                      src={item.img}
                       alt={item.title}
                       fill
                       className="object-contain group-hover:scale-[1.04] transition-all duration-700"
@@ -163,28 +157,24 @@ const CPVCBrassCatalog = () => {
                 {/* Content */}
                 <div className="p-6">
 
-                  {/* Number */}
                   <p className="text-sm text-black/35">
 
                     {String(index + 1).padStart(2, "0")}
 
                   </p>
 
-                  {/* Title */}
                   <h3 className="mt-4 text-[28px] leading-[1.1] tracking-tight font-semibold text-black">
 
                     {item.title}
 
                   </h3>
 
-                  {/* Description */}
                   <p className="mt-4 text-base leading-7 text-black/60">
 
                     {item.desc}
 
                   </p>
 
-                  {/* Bottom */}
                   <div className="mt-8 flex items-center justify-between">
 
                     <div className="h-px flex-1 bg-black/10"></div>
@@ -204,7 +194,7 @@ const CPVCBrassCatalog = () => {
         {/* LIST VIEW */}
         {view === "list" && (
 
-          <div className="mt-16 grid lg:grid-cols-2 gap-5">
+          <div className="mt-16 flex flex-col gap-4">
 
             {products.map((item, index) => (
               <div
@@ -212,21 +202,21 @@ const CPVCBrassCatalog = () => {
                 className="group rounded-[28px] border border-black/10 bg-white overflow-hidden hover:border-[#8a2967]/20 transition-all duration-500"
               >
 
-                <div className="flex flex-col sm:flex-row h-full">
+                <div className="flex flex-row items-center h-full">
 
                   {/* Image */}
-                  <div className="relative sm:w-[220px] h-[220px] shrink-0  overflow-hidden">
+                  <div className="relative w-[140px] h-[140px] shrink-0 overflow-hidden">
 
-                    <h3 className="absolute inset-0 flex items-center justify-center text-5xl font-semibold tracking-tight text-[#8a2967]/[0.04] pointer-events-none">
+                    <h3 className="absolute inset-0 flex items-center justify-center text-3xl font-semibold tracking-tight text-[#8a2967]/[0.04] pointer-events-none">
 
                       BRASS
 
                     </h3>
 
-                    <div className="relative z-10 w-full h-full p-8">
+                    <div className="relative z-10 w-full h-full p-5">
 
                       <Image
-                        src={ProductImg}
+                        src={item.img}
                         alt={item.title}
                         fill
                         className="object-contain group-hover:scale-[1.04] transition-all duration-700"
@@ -234,59 +224,41 @@ const CPVCBrassCatalog = () => {
                     </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="flex flex-col flex-1 p-6">
+                  {/* Divider */}
+                  <div className="w-px h-16 bg-black/10 shrink-0" />
 
-                    <div className="flex items-start justify-between gap-5">
+                  {/* Content */}
+                  <div className="flex flex-1 items-center justify-between gap-4 px-6 py-4">
+
+                    <div className="flex items-center gap-6">
+
+                      <p className="text-sm text-black/35 shrink-0">
+
+                        {String(index + 1).padStart(2, "0")}
+
+                      </p>
 
                       <div>
 
-                        <p className="text-sm text-black/35">
-
-                          {String(index + 1).padStart(2, "0")}
-
-                        </p>
-
-                        <h3 className="mt-4 text-[30px] leading-[1.1] tracking-tight font-semibold text-black">
+                        <h3 className="text-xl leading-tight tracking-tight font-semibold text-black">
 
                           {item.title}
 
                         </h3>
-                      </div>
 
-                      <button className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center text-black hover:bg-[#8a2967] hover:text-white hover:border-[#8a2967] transition-all duration-300 shrink-0">
+                        <p className="mt-1 text-sm leading-6 text-black/60 max-w-lg">
 
-                        <HiOutlineArrowUpRight className="text-lg" />
-
-                      </button>
-                    </div>
-
-                    <p className="mt-5 text-base leading-7 text-black/60 max-w-lg">
-
-                      {item.desc}
-
-                    </p>
-
-                    <div className="mt-auto pt-8 flex items-center gap-3 flex-wrap">
-
-                      <div className="px-4 py-2 rounded-full border border-black/10 bg-[#8a29660e]">
-
-                        <p className="text-sm font-medium text-black">
-
-                          Brass Reinforced
-
-                        </p>
-                      </div>
-
-                      <div className="px-4 py-2 rounded-full border border-black/10 bg-[#8a29660e]">
-
-                        <p className="text-sm font-medium text-black">
-
-                          High Pressure
+                          {item.desc}
 
                         </p>
                       </div>
                     </div>
+
+                    <button className="w-11 h-11 rounded-full border border-black/10 flex items-center justify-center text-black hover:bg-[#8a2967] hover:text-white hover:border-[#8a2967] transition-all duration-300 shrink-0">
+
+                      <HiOutlineArrowUpRight className="text-lg" />
+
+                    </button>
                   </div>
                 </div>
               </div>

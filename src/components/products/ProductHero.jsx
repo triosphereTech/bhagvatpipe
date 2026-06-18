@@ -7,12 +7,12 @@ const ProductHero = () => {
   return (
     <section className="w-full bg-linear-to-b from-white to-[#8a29660e] overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-4 py-14 sm:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 ">
 
         {/* Top Strip */}
-        <div className="flex flex-wrap items-center justify-between gap-6 border-b border-dotted border-black/10 pb-6">
+        {/* <div className="flex flex-wrap items-center justify-between gap-6 border-b border-dotted border-black/10 pb-6">
 
-          {/* Left */}
+        
           <div className="flex items-center gap-3">
 
             <div className="w-10 h-px bg-[#8a2967]/30"></div>
@@ -24,13 +24,13 @@ const ProductHero = () => {
             </p>
           </div>
 
-          {/* Right */}
+          
           <p className="text-sm sm:text-base text-black/50">
 
             CPVC • UPVC • SWR • Industrial Solutions
 
           </p>
-        </div>
+        </div> */}
 
         {/* Main Layout */}
         <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-end pt-12">
@@ -39,7 +39,7 @@ const ProductHero = () => {
           <div>
 
             {/* Heading */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl leading-none tracking-tight font-semibold text-black">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl leading-none tracking-wide font-semibold text-black">
 
               Engineered
               <br />

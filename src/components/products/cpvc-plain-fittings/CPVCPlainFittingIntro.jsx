@@ -51,13 +51,13 @@ const CPVCIntro = () => {
             <div className="px-6 py-10 sm:px-8 lg:px-10 lg:py-12">
 
               {/* Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-none tracking-tight font-semibold text-black max-w-3xl">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-none  font-semibold text-black max-w-3xl">
 
                 C-PVC
                 <br />
 
                 Plain
-                <br />
+              
 
                 Fittings
 
