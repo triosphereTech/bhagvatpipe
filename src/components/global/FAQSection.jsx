@@ -61,7 +61,7 @@ const FAQSection = () => {
             </p>
           </div>
 
-          <h2 className="mt-7 text-5xl md:text-6xl xl:text-6xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="mt-6 text-2xl md:text-3xl xl:text-4xl leading-tight tracking-tight font-semibold text-black">
 
             Everything You Need
             <br />
@@ -75,7 +75,7 @@ const FAQSection = () => {
         </div>
 
         {/* FAQ List */}
-        <div className="mt-16 border-t border-black/10">
+        <div className="mt-10 md:mt-12 border-t border-black/10">
 
           {faqs.map((faq, index) => {
             const isActive = activeIndex === index;
@@ -92,23 +92,23 @@ const FAQSection = () => {
                   className="w-full flex items-center justify-between gap-6 py-7 text-left"
                 >
 
-                  <h3 className="text-xl sm:text-2xl font-medium text-black leading-relaxed">
+                  <h3 className="text-lg sm:text-xl font-medium text-black leading-relaxed">
 
                     {faq.question}
 
                   </h3>
 
                   {/* Icon */}
-                  <div className={`w-12 h-12 rounded-full border border-black/10 flex items-center justify-center shrink-0 transition-all duration-300 ${
+                  <div className={`w-10 h-10 rounded-full border border-black/10 flex items-center justify-center shrink-0 transition-all duration-300 ${
                     isActive
                       ? "bg-[#8a2967] text-white border-[#8a2967]"
                       : "bg-[#8a29660e] text-black"
                   }`}>
 
                     {isActive ? (
-                      <HiOutlineMinus className="text-xl" />
+                      <HiOutlineMinus className="text-lg" />
                     ) : (
-                      <HiOutlinePlus className="text-xl" />
+                      <HiOutlinePlus className="text-lg" />
                     )}
 
                   </div>
@@ -123,7 +123,7 @@ const FAQSection = () => {
 
                   <div className="overflow-hidden">
 
-                    <p className="max-w-4xl text-lg leading-8 text-black/60 pr-10">
+                    <p className="max-w-4xl text-[14px] md:text-[16px] lg:text-[18px] leading-7 text-black/60 pr-10">
 
                       {faq.answer}
 

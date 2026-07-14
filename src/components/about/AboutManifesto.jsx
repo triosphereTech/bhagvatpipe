@@ -2,14 +2,14 @@ import React from "react";
 
 const AboutManifesto = () => {
   return (
-    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-4 py-20 overflow-hidden">
+    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-4 py-5 overflow-hidden">
 
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-left md:text-center">
 
         {/* Small Label */}
         <div className="flex items-center justify-center gap-3">
 
-          <div className="w-10 h-px bg-[#8a2967]/30"></div>
+          <div className="w-5 h-2px bg-[#8a2967]/30"></div>
 
           <p className="text-sm font-medium tracking-wide uppercase text-[#8a2967]">
 
@@ -21,7 +21,7 @@ const AboutManifesto = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="mt-8 text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight font-semibold text-black">
+        <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center">
 
           Engineered For
           <span className="text-[#8a2967]">
@@ -31,9 +31,9 @@ const AboutManifesto = () => {
         </h2>
 
         {/* Description */}
-        <div className="mt-10 space-y-6">
+        <div className="mt-8 space-y-5">
 
-          <p className="text-lg leading-8 text-black/65">
+          <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/65">
 
             Bhagvat Pipes manufactures premium CPVC and
             UPVC piping systems engineered for durability,
@@ -41,7 +41,7 @@ const AboutManifesto = () => {
 
           </p>
 
-          <p className="text-lg leading-8 text-black/65">
+          <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/65">
 
             Designed for residential, commercial, and industrial
             environments, our piping solutions combine
@@ -51,7 +51,7 @@ const AboutManifesto = () => {
 
           </p>
 
-          <p className="text-lg leading-8 text-black/65">
+          <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/65">
 
             With a strong focus on product quality and dependable
             infrastructure solutions, Bhagvat Pipes continues
@@ -62,7 +62,7 @@ const AboutManifesto = () => {
         </div>
 
         {/* Bottom Divider */}
-        <div className="mt-16 flex items-center justify-center gap-4">
+        <div className="mt-10 flex items-center justify-center gap-4">
 
           <div className="w-20 h-px bg-black/10"></div>
 

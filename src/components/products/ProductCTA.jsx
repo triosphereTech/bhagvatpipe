@@ -10,7 +10,7 @@ import {
 
 const ProductCTA = () => {
   return (
-    <section className="w-full bg-white px-4 pb-20 sm:pb-24 lg:pb-28 overflow-hidden">
+    <section className="w-full bg-white px-4 pb-14 sm:pb-16 lg:pb-20 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
@@ -28,7 +28,7 @@ const ProductCTA = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 grid lg:grid-cols-[1fr_0.9fr] gap-10 items-center px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-20">
+          <div className="relative z-10 grid lg:grid-cols-[1fr_0.9fr] gap-10 items-center px-6 py-12 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
 
             {/* LEFT */}
             <div>
@@ -46,7 +46,7 @@ const ProductCTA = () => {
               </div>
 
               {/* Heading */}
-              <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black max-w-4xl">
+              <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center max-w-4xl">
 
                 Reliable Piping Systems
                 <br />
@@ -59,7 +59,7 @@ const ProductCTA = () => {
               </h2>
 
               {/* Description */}
-              <p className="mt-8 text-lg leading-8 text-black/60 max-w-2xl">
+              <p className="mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-2xl">
 
                 Explore Bhagvat’s premium piping
                 solutions engineered for residential,
@@ -69,7 +69,7 @@ const ProductCTA = () => {
               </p>
 
               {/* Buttons */}
-              <div className="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
 
                 {/* Contact */}
                 <button className="group h-14 px-7 rounded-full bg-[#8a2967] text-white text-base font-medium flex items-center gap-3 hover:scale-[1.02] transition-all duration-300">

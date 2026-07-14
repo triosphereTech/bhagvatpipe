@@ -51,8 +51,8 @@ const Navbar = () => {
     {
       heading: "Upvc",
       items: [
-        { name: "SWR Ring Fit", path: "/products/swr-fittings", desc: "Soil, waste & rainwater systems" },
-        { name: "SWR Self Fit", path: "/products/swr-pipes", desc: "Rigid PVC drain & vent pipes" },
+        { name: "SWR Ring Fit", path: "/products/swr-ring-fittings", desc: "Soil, waste & rainwater systems" },
+        { name: "SWR Self Fit", path: "/products/swr-self-fittings", desc: "Rigid PVC drain & vent pipes" },
         { name: "Column Pipes", path: "/products/column-pipes", desc: "Submersible pump delivery pipes" },
       ],
     },
@@ -75,27 +75,82 @@ const Navbar = () => {
           hideTopStrip ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"
         }`}
       >
-        <div className="h-9 bg-[#8a2967] text-white flex items-center justify-center px-4 overflow-hidden">
-          <div className="flex items-center gap-3 md:gap-6 whitespace-nowrap text-[11px] md:text-sm font-medium">
-            <span className="opacity-95">
-              Get Instant Online quotation on WhatsApp :
-              <a href="https://wa.me/919797971181" className="ml-1 hover:underline">
-                +91 - 9797971181
-              </a>
-            </span>
-            <span className="hidden md:block w-1 h-1 rounded-full bg-white/50" />
-            <span className="opacity-95">
-              Call :
-              <a href="tel:+919104876565" className="ml-1 hover:underline">
-                +91 - 9104876565
-              </a>
-            </span>
-            <span className="hidden lg:block w-1 h-1 rounded-full bg-white/50" />
-            <span className="hidden lg:block font-semibold tracking-wide">Bhagvat Pipe</span>
-            <span className="hidden xl:block w-1 h-1 rounded-full bg-white/50" />
-            <span className="hidden xl:block uppercase tracking-[0.2em] text-white/80 text-[10px]">Ahmedabad</span>
-          </div>
-        </div>
+       <div className="h-9 bg-[#8a2967] text-white flex items-center overflow-hidden">
+
+  {/* Mobile */}
+  <div className="flex md:hidden w-max items-center gap-6 whitespace-nowrap text-[11px] font-medium animate-marquee">
+
+    <span className="opacity-95">
+      Get Instant Online quotation on WhatsApp :
+      <a href="https://wa.me/919797971181" className="ml-1 hover:underline">
+        +91 - 9797971181
+      </a>
+    </span>
+
+    <span className="w-1 h-1 rounded-full bg-white/50" />
+
+    <span className="opacity-95">
+      Call :
+      <a href="tel:+919104876565" className="ml-1 hover:underline">
+        +91 - 9104876565
+      </a>
+    </span>
+
+    {/* Duplicate for seamless loop */}
+    <span className="opacity-95">
+      Get Instant Online quotation on WhatsApp :
+      <a href="https://wa.me/919797971181" className="ml-1 hover:underline">
+        +91 - 9797971181
+      </a>
+    </span>
+
+    <span className="w-1 h-1 rounded-full bg-white/50" />
+
+    <span className="opacity-95">
+      Call :
+      <a href="tel:+919104876565" className="ml-1 hover:underline">
+        +91 - 9104876565
+      </a>
+    </span>
+
+  </div>
+
+  {/* Desktop (unchanged) */}
+  <div className="hidden md:flex w-full items-center justify-center px-4">
+    <div className="flex items-center gap-3 md:gap-6 whitespace-nowrap text-[11px] md:text-sm font-medium">
+
+      <span className="opacity-95">
+        Get Instant Online quotation on WhatsApp :
+        <a href="https://wa.me/919797971181" className="ml-1 hover:underline">
+          +91 - 9797971181
+        </a>
+      </span>
+
+      <span className="hidden md:block w-1 h-1 rounded-full bg-white/50" />
+
+      <span className="opacity-95">
+        Call :
+        <a href="tel:+919104876565" className="ml-1 hover:underline">
+          +91 - 9104876565
+        </a>
+      </span>
+
+      <span className="hidden lg:block w-1 h-1 rounded-full bg-white/50" />
+
+      <span className="hidden lg:block font-semibold tracking-wide">
+        Bhagvat Pipe
+      </span>
+
+      <span className="hidden xl:block w-1 h-1 rounded-full bg-white/50" />
+
+      <span className="hidden xl:block uppercase tracking-[0.2em] text-white/80 text-[10px]">
+        Ahmedabad
+      </span>
+
+    </div>
+  </div>
+
+</div>
       </div>
 
       {/* Main Nav */}
@@ -105,14 +160,7 @@ const Navbar = () => {
         }`}
       >
         {/* Glass Blur Fade */}
-        <div
-          className="
-            absolute inset-x-0 top-0 h-40
-            bg-white/65 backdrop-blur-3xl pointer-events-none
-            [mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_45%,rgba(0,0,0,0)_100%)]
-            [-webkit-mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_45%,rgba(0,0,0,0)_100%)]
-          "
-        />
+        <div className="absolute inset-x-0 top-0 h-40 bg-white/65 backdrop-blur-3xl pointer-events-none [mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_45%,rgba(0,0,0,0)_100%)] [-webkit-mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_45%,rgba(0,0,0,0)_100%)]" />
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 rounded-full px-4 md:px-6 h-16 flex items-center justify-between">
             {/* Logo */}
@@ -208,7 +256,7 @@ const Navbar = () => {
                             {/* Bottom CTA strip */}
                             <div className="border-t border-black/6 bg-[#fafaf8] px-6 py-3 flex items-center justify-between">
                               <p className="text-xs text-black/40">
-                                Can't find what you need?
+                                Can&apos;t find what you need?
                               </p>
                               <Link
                                 href="/contact"
@@ -305,7 +353,7 @@ const Navbar = () => {
                             onClick={() => setMobileProductOpen(!mobileProductOpen)}
                             className="w-full flex items-center justify-between py-5"
                           >
-                            <span className="text-[36px] leading-none font-semibold tracking-tight text-black">
+                            <span className="text-[26px] leading-none font-semibold tracking-tight text-black">
                               Products
                             </span>
                             <span
@@ -380,7 +428,7 @@ const Navbar = () => {
                         className="group"
                       >
                         <div className="flex items-center justify-between py-5 border-b border-black/8">
-                          <span className="text-[36px] leading-none font-semibold tracking-tight text-black">
+                          <span className="text-[26px] leading-none font-semibold tracking-tight text-black">
                             {link.name}
                           </span>
                           <span className="text-black/20 text-2xl group-hover:translate-x-1 transition-all duration-300">

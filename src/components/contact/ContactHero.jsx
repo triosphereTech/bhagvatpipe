@@ -26,7 +26,7 @@ const contactInfo = [
 
 const ContactHero = () => {
   return (
-    <section className="w-full bg-white px-4 py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <section className="w-full bg-white px-4 py-5 lg:py-5 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
@@ -49,7 +49,7 @@ const ContactHero = () => {
             </div>
 
             {/* Heading */}
-            <h1 className="mt-7 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black max-w-4xl">
+            <h1 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black  max-w-4xl">
 
               Let’s Build
               <span className="text-[#8a2967]">
@@ -63,7 +63,7 @@ const ContactHero = () => {
             </h1>
 
             {/* Description */}
-            <p className="mt-8 text-lg leading-8 text-black/60 max-w-2xl">
+            <p className="mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-2xl">
 
               Connect with Bhagvat Pipes for premium
               CPVC, UPVC, and SWR piping solutions
@@ -117,7 +117,7 @@ const ContactHero = () => {
         </div>
 
         {/* Bottom Divider */}
-        <div className="mt-16 h-px w-full bg-black/8"></div>
+        <div className="mt-10 h-px w-full bg-black/8"></div>
       </div>
     </section>
   );

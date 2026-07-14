@@ -8,7 +8,7 @@ import {
 
 const ContactFormSection = () => {
   return (
-    <section className="w-full bh-linear-to-b from-white to-[#8a29660e] px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-4 py-5 lg:py-5 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
@@ -41,7 +41,7 @@ const ContactFormSection = () => {
 
               </h2>
 
-              <p className="mt-5 text-base leading-7 text-black/60">
+              <p className="mt-5 text-[14px] md:text-[16px] leading-relaxed text-black/60">
 
                 Connect with Bhagvat Pipes for product
                 inquiries, dealership opportunities, or

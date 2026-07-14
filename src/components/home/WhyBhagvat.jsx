@@ -28,26 +28,26 @@ const features = [
 
 const WhyBhagvat = () => {
   return (
-    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-4 pb-20 md:pb-28 overflow-hidden">
+    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-5 pb-14 md:pb-20 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
         {/* Top Heading */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 mb-14">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10 md:mb-12">
 
           {/* Left */}
           <div className="max-w-3xl">
 
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-2 mb-6">
 
-              <div className="w-10 h-[2px] bg-black/50 rounded-xl"></div>
+              <div className="w-5 h-[2px] bg-black/50 rounded-xl"></div>
 
               <p className="uppercase tracking-[0.22em] text-xs sm:text-sm text-black/50 font-medium">
                 Why Bhagvat
               </p>
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-normal text-black">
+            <h2 className="text-[26px] md:text-[34px] lg:text-[44px] leading-tight font-semibold tracking-normal text-black">
 
               Engineered For
               <br />
@@ -63,7 +63,7 @@ const WhyBhagvat = () => {
           {/* Right */}
           <div className="max-w-xl">
 
-            <p className="text-base sm:text-lg leading-relaxed text-black/60">
+            <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60">
 
               Bhagvat Pipes combines modern manufacturing,
               certified quality standards, and engineering precision
@@ -78,7 +78,7 @@ const WhyBhagvat = () => {
         <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-6">
 
           {/* LEFT IMAGE PANEL */}
-          <div className="relative bg-white rounded-2xl overflow-hidden min-h-[650px] border border-black/5">
+          <div className="relative bg-white rounded-2xl overflow-hidden min-h-[560px] lg:min-h-[620px] border border-black/5">
 
             {/* Glow */}
             <div className="absolute -top-20 -right-20 w-[300px] h-[300px] bg-[#ebf1fd] rounded-xl blur-3xl opacity-70"></div>
@@ -87,7 +87,7 @@ const WhyBhagvat = () => {
             <div className="relative z-10 flex flex-col h-full">
 
               {/* Top Content */}
-              <div className="p-8 sm:p-10 lg:p-12">
+              <div className="px-5 py-8 lg:py-12">
 
                 <div className="inline-flex items-center h-11 px-5 rounded-xl bg-[#EEF2FB] border border-black/5 text-sm font-medium text-black/70">
 
@@ -95,7 +95,7 @@ const WhyBhagvat = () => {
 
                 </div>
 
-                <h3 className="mt-7 text-4xl sm:text-5xl font-semibold tracking-[-0.05em] text-black leading-[1.02] max-w-[520px]">
+                <h3 className="mt-6 text-[30px] md:text-[38px] lg:text-[44px] font-semibold text-black leading-tight max-w-[520px]">
 
                   Trusted Infrastructure
                   Solutions Built For
@@ -103,7 +103,7 @@ const WhyBhagvat = () => {
 
                 </h3>
 
-                <p className="mt-6 text-black/60 text-base leading-relaxed max-w-[560px]">
+                <p className="mt-5 text-black/60 text-[14px] md:text-[16px] leading-relaxed max-w-[560px]">
 
                   From plumbing systems to industrial drainage
                   networks, Bhagvat Pipes delivers precision-engineered
@@ -152,13 +152,13 @@ const WhyBhagvat = () => {
 
                     <div>
 
-                      <h3 className="text-5xl sm:text-6xl font-semibold tracking-[-0.05em] text-black">
+                      <h3 className="text-[34px] sm:text-[46px] font-semibold text-fuchsia-800">
 
                         {item.number}
 
                       </h3>
 
-                      <h4 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-black">
+                      <h4 className="mt-1 text-xl font-semibold text-black">
 
                         {item.title}
 
@@ -207,7 +207,7 @@ const WhyBhagvat = () => {
               Nationwide Industrial Trust
             </p>
 
-            <h3 className="text-3xl sm:text-4xl font-semibold tracking-[-0.04em] text-black leading-tight">
+            <h3 className="text-2xl sm:text-4xl font-semibold text-black leading-tight">
 
               Delivering Durable Piping
               Solutions Across India

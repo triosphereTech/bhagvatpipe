@@ -51,7 +51,7 @@ const CPVCIntro = () => {
             <div className="px-6 py-10 sm:px-8 lg:px-10 lg:py-12">
 
               {/* Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-none tracking-tight font-semibold text-black max-w-3xl">
+              <h1 className="text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black max-w-3xl">
 
                 C-PVC
                 <br />
@@ -64,7 +64,7 @@ const CPVCIntro = () => {
               </h1>
 
               {/* Description */}
-              <p className="mt-8 text-lg leading-8 text-black/60 max-w-2xl">
+              <p className="mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-2xl">
 
                 Bhagvat C-PVC Plumbing Pipes are
                 engineered for residential,
@@ -75,7 +75,7 @@ const CPVCIntro = () => {
               </p>
 
               {/* Specs Strip */}
-              <div className="mt-10 border-t border-black/10 pt-8">
+              <div className="mt-8 border-t border-black/10 pt-6">
 
                 <div className="overflow-x-auto scrollbar-hide">
 
@@ -105,7 +105,7 @@ const CPVCIntro = () => {
               </div>
 
               {/* Bottom Technical Row */}
-              <div className="mt-12 grid sm:grid-cols-3 gap-6">
+              <div className="mt-8 grid sm:grid-cols-3 gap-6">
 
                 <div>
 

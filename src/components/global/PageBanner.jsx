@@ -10,7 +10,7 @@ const PageBanner = ({
   breadcrumbs = [],
 }) => {
   return (
-    <section className="w-full bg-linear-to-b from-[#8a29660e] to-white pt-44 px-4">
+    <section className="w-full bg-linear-to-b from-[#8a29660e] to-white pt-32 md:pt-36 px-4">
 
       <div className="max-w-7xl mx-auto">
 
@@ -45,11 +45,11 @@ const PageBanner = ({
         {/* Title */}
         <div className="mt-5 flex items-end justify-between gap-6">
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-black">
+          {/* <h1 className="text-[32px] md:text-[42px] lg:text-[48px] leading-tight font-semibold text-black">
 
             {title}
 
-          </h1>
+          </h1> */}
 
           {/* Small Line */}
           {/* <div className="hidden md:block w-20 h-px bg-black/10"></div> */}

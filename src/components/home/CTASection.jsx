@@ -6,7 +6,7 @@ import {
 
 const CTASection = () => {
   return (
-    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-4 py-20 md:py-28 overflow-hidden">
+    <section className="w-full bg-linear-to-b from-white to-[#8a29660e] px-4 py-10 md:py-20 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
@@ -19,7 +19,7 @@ const CTASection = () => {
           <div className="absolute -bottom-40 -left-32 w-[420px] h-[420px] rounded-full bg-[#8a2967]/5 blur-3xl"></div>
 
           {/* Grid */}
-          <div className="relative z-10 grid lg:grid-cols-[1fr_0.6fr] gap-16 px-7 sm:px-10 lg:px-16 py-16 sm:py-20 lg:py-24">
+          <div className="relative z-10 grid lg:grid-cols-[1fr_0.6fr] gap-3 lg:gap-12 px-7 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-20">
 
             {/* LEFT */}
             <div>
@@ -27,7 +27,7 @@ const CTASection = () => {
               {/* Label */}
               <div className="flex items-center gap-3 mb-7">
 
-                <div className="w-10 h-[2px] bg-[#8a2967]/40 rounded-full"></div>
+                <div className="w-5 h-[2px] bg-[#8a2967]/40 rounded-full"></div>
 
                 <p className="uppercase tracking-[0.22em] text-xs sm:text-sm text-[#8a2967]/60 font-medium">
 
@@ -37,7 +37,7 @@ const CTASection = () => {
               </div>
 
               {/* Heading */}
-              <h2 className=" leading-[0.92]text-5xl md:text-6xl xl:text-6xl font-semibold tracking-wide text-black">
+              <h2 className="text-[26px] md:text-[34px] lg:text-[44px] leading-[1.02] font-semibold tracking-wide text-black">
 
                 Become a
                 <br />
@@ -50,7 +50,7 @@ const CTASection = () => {
               </h2>
 
               {/* Description */}
-              <p className="mt-10 max-w-2xl text-base sm:text-lg leading-relaxed text-black/60">
+              <p className="mt-6 max-w-2xl text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60">
 
                 Join Bhagvat’s growing distribution network and
                 deliver premium CPVC, UPVC, and SWR piping
@@ -60,7 +60,7 @@ const CTASection = () => {
               </p>
 
               {/* Bottom Tags */}
-              <div className="mt-12 flex flex-wrap gap-3">
+              <div className="hidden lg:flex mt-8 flex-wrap gap-3">
 
                 {[
                   "PAN India Supply",
@@ -86,13 +86,13 @@ const CTASection = () => {
               {/* Top Text */}
               <div>
 
-                <p className="uppercase tracking-[0.2em] text-xs text-[#8a2967]/50 mb-5">
+                <p className="hidden lg:block uppercase tracking-[0.2em] text-xs text-[#8a2967]/50 mb-5">
 
                   Start Collaboration
 
                 </p>
 
-                <h3 className="text-3xl sm:text-4xl lg:text-5xl leading-[1] tracking-[-0.05em] font-semibold text-black">
+                <h3 className="hidden lg:block text-2xl sm:text-3xl lg:text-4xl leading-tight font-semibold text-black">
 
                   Let’s Build
                   Reliable
@@ -103,10 +103,10 @@ const CTASection = () => {
               </div>
 
               {/* CTA Buttons */}
-              <div className="mt-12 flex flex-col gap-4">
+              <div className="mt-8 flex flex-col gap-4">
 
                 {/* Main Button */}
-                <button className="group h-16 px-7 rounded-full bg-[#8a2967] text-white flex items-center justify-between hover:scale-[1.02] transition-all duration-300">
+                <button className="group h-14 px-7 rounded-full bg-[#8a2967] text-white flex items-center justify-between hover:scale-[1.02] transition-all duration-300">
 
                   <span className="text-sm sm:text-base font-medium tracking-wide">
 
@@ -114,15 +114,15 @@ const CTASection = () => {
 
                   </span>
 
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:rotate-45 transition-all duration-300">
+                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:rotate-45 transition-all duration-300">
 
-                    <HiOutlineArrowUpRight className="text-xl" />
+                    <HiOutlineArrowUpRight className="text-lg" />
 
                   </div>
                 </button>
 
                 {/* Secondary */}
-                <button className="group h-16 px-7 rounded-full border border-[#8a2967]/10 bg-[#8a29660e] text-[#8a2967] flex items-center justify-between hover:bg-[#8a2967] hover:text-white transition-all duration-300">
+                <button className="group h-14 px-7 rounded-full border border-[#8a2967]/10 bg-[#8a29660e] text-[#8a2967] flex items-center justify-between hover:bg-[#8a2967] hover:text-white transition-all duration-300">
 
                   <span className="text-sm sm:text-base font-medium tracking-wide">
 
@@ -130,23 +130,23 @@ const CTASection = () => {
 
                   </span>
 
-                  <div className="w-10 h-10 rounded-full border border-current/20 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full border border-current/20 flex items-center justify-center">
 
-                    <HiOutlineArrowUpRight className="text-xl" />
+                    <HiOutlineArrowUpRight className="text-lg" />
 
                   </div>
                 </button>
               </div>
 
               {/* Contact Strip */}
-              <div className="mt-12 pt-8 border-t border-[#8a2967]/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+              <div className="mt-8 pt-6 border-t border-[#8a2967]/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
 
                 {/* Left */}
                 <div className="flex items-center gap-4">
 
-                  <div className="w-14 h-14 rounded-full bg-[#8a29660e] border border-[#8a2967]/10 flex items-center justify-center text-[#8a2967]">
+                  <div className="w-10 h-10 rounded-full bg-[#8a29660e] border border-[#8a2967]/10 flex items-center justify-center text-[#8a2967]">
 
-                    <HiOutlinePhone className="text-2xl" />
+                    <HiOutlinePhone className="text-xl" />
 
                   </div>
 
@@ -184,7 +184,7 @@ const CTASection = () => {
           {/* Huge Background Typography */}
           {/* <div className="absolute bottom-[-25px] left-0 w-full overflow-hidden pointer-events-none">
 
-            <h3 className="text-[90px] sm:text-[140px] lg:text-[220px] font-semibold tracking-[-0.08em] leading-none text-[#8a2967]/[0.03] whitespace-nowrap">
+            <h3 className="text-[90px] sm:text-[140px] lg:text-[220px] font-semibold leading-none text-[#8a2967]/[0.03] whitespace-nowrap">
 
               BHAGVAT PIPES
 

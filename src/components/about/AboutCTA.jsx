@@ -7,7 +7,7 @@ import {
 
 const AboutCTA = () => {
   return (
-    <section className="w-full bg-white px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-white px-4 py-5 sm:py-5 lg:py-10 overflow-hidden">
 
       <div className="max-w-6xl mx-auto">
 
@@ -25,7 +25,7 @@ const AboutCTA = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24 text-center">
+          <div className="relative z-10 px-6 py-12 sm:px-10 sm:py-16 lg:px-16 lg:py-20 text-center">
 
             {/* Small Label */}
             <div className="flex items-center justify-center gap-3">
@@ -42,7 +42,7 @@ const AboutCTA = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black max-w-4xl mx-auto">
+            <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center max-w-4xl mx-auto">
 
               Reliable Piping Systems
               <br />
@@ -55,7 +55,7 @@ const AboutCTA = () => {
             </h2>
 
             {/* Description */}
-            <p className="mt-8 text-lg leading-8 text-black/60 max-w-2xl mx-auto">
+            <p className="mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-2xl mx-auto">
 
               Bhagvat Pipes continues to deliver
               dependable CPVC, UPVC, and SWR
@@ -65,23 +65,23 @@ const AboutCTA = () => {
             </p>
 
             {/* Buttons */}
-            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
 
               {/* Contact Button */}
-              <button className="h-14 px-8 rounded-full bg-[#8a2967] text-white text-base font-medium flex items-center gap-2 hover:scale-[1.02] transition-all duration-300">
+              <button className="h-12 px-6 rounded-full bg-[#8a2967] text-white text-base font-medium flex items-center gap-2 hover:scale-[1.02] transition-all duration-300">
 
                 Contact Us
 
-                <HiArrowRight className="text-lg" />
+                <HiArrowRight className="text-md" />
 
               </button>
 
               {/* Brochure Button */}
-              <button className="h-14 px-8 rounded-full border border-black/10 bg-white text-black text-base font-medium flex items-center gap-2 hover:bg-black hover:text-white transition-all duration-300">
+              <button className="h-12 px-6 rounded-full border border-black/10 bg-white text-black text-base font-medium flex items-center gap-2 hover:bg-black hover:text-white transition-all duration-300">
 
                 Download Brochure
 
-                <HiOutlineArrowDownTray className="text-lg" />
+                <HiOutlineArrowDownTray className="text-md" />
 
               </button>
             </div>

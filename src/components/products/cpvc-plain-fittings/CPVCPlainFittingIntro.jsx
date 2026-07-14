@@ -14,57 +14,60 @@ const specifications = [
 
 const CPVCIntro = () => {
   return (
-    <section className="w-full bg-white px-4 py-10 sm:py-12 lg:py-14 overflow-hidden">
-
+    <section className="w-full bg-white px-4 py-5 lg:py-2 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Main Layout */}
         <div className="border border-black/10 rounded-[10px] overflow-hidden">
 
-          {/* TOP STRIP */}
-          <div className="flex flex-wrap items-center justify-between gap-5 px-6 sm:px-8 lg:px-10 py-5 border-b border-black/10 bg-[#8a29660e]">
-
-            {/* Left */}
-            <div className="flex items-center gap-3">
-
-              <div className="w-10 h-px bg-[#8a2967]/30"></div>
-
-              <p className="text-sm font-medium tracking-wide uppercase text-[#8a2967]">
-
-                C-PVC Fitting Category
-
-              </p>
-            </div>
+          {/* ================= TOP STRIP ================= */}
+           <div className="flex flex-wrap items-center justify-between gap-5 px-6 sm:px-8 lg:px-10 py-5 border-b border-black/10 bg-[#8a29660e]">
 
             {/* Right */}
-            <p className="text-sm sm:text-base text-black/50">
+           <p className="text-sm sm:text-base text-black/50">
 
               Strong & Leak-Proof Plumbing Systems
 
             </p>
+
           </div>
 
           {/* MAIN CONTENT */}
           <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
 
             {/* LEFT */}
-            <div className="px-6 py-10 sm:px-8 lg:px-10 lg:py-12">
+            <div className="px-6 py-7 sm:px-8 lg:px-10 lg:py-12">
 
               {/* Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-none  font-semibold text-black max-w-3xl">
+              <h1 className="text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black max-w-3xl">
 
                 C-PVC
                 <br />
-
                 Plain
-              
-
+             
                 Fittings
 
               </h1>
 
+              {/* Mobile Image */}
+              <div className="relative lg:hidden flex justify-center items-center mt-10 mb-10">
+
+                <div className="relative w-[240px] sm:w-[300px] md:w-[360px] aspect-square">
+
+                  <Image
+                    src={CPVCPipeImg}
+                    alt="C-PVC Plain Fittings"
+                    fill
+                    priority
+                    className="object-contain"
+                  />
+
+                </div>
+
+              </div>
+
               {/* Description */}
-              <p className="mt-8 text-lg leading-8 text-black/60 max-w-2xl">
+              <p className="mt-4 text-base sm:text-lg lg:text-xl leading-relaxed text-black/60 max-w-2xl">
 
                 Bhagvat C-PVC Plain Fittings are
                 engineered for secure plumbing
@@ -75,33 +78,37 @@ const CPVCIntro = () => {
 
               </p>
 
-              {/* Specs Strip */}
-            {/* Specs Strip */}
-<div className="mt-10 border-t border-black/10 pt-8">
+              {/* ================= Specifications ================= */}
+              <div className="mt-12 border-t border-black/10 pt-8">
 
-  <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-8">
 
-    {specifications.map((item, index) => (
-      <div key={index}>
+                  {specifications.map((item, index) => (
 
-        <p className="text-sm text-black/40">
+                    <div key={index}>
 
-          0{index + 1}
+                      <p className="text-sm text-black/35">
 
-        </p>
+                        0{index + 1}
 
-        <h3 className="mt-2 text-lg font-semibold text-black leading-snug">
+                      </p>
 
-          {item}
+                      <h3 className="mt-3 text-base sm:text-lg font-semibold leading-snug text-black">
 
-        </h3>
-      </div>
-    ))}
-  </div>
-</div>
+                        {item}
 
-              {/* Bottom Technical Row */}
-              <div className="mt-12 grid sm:grid-cols-3 gap-6">
+                      </h3>
+
+                    </div>
+
+                  ))}
+
+                </div>
+
+              </div>
+
+              {/* ================= Bottom Technical Row ================= */}
+              <div className="mt-12 grid grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <div>
 
@@ -111,11 +118,12 @@ const CPVCIntro = () => {
 
                   </p>
 
-                  <h3 className="mt-2 text-xl font-semibold text-black">
+                  <h3 className="mt-3 text-lg sm:text-xl font-semibold text-black leading-snug">
 
                     High-Grade C-PVC
 
                   </h3>
+
                 </div>
 
                 <div>
@@ -126,11 +134,12 @@ const CPVCIntro = () => {
 
                   </p>
 
-                  <h3 className="mt-2 text-xl font-semibold text-black">
+                  <h3 className="mt-3 text-lg sm:text-xl font-semibold text-black leading-snug">
 
                     Solvent Weld
 
                   </h3>
+
                 </div>
 
                 <div>
@@ -141,54 +150,97 @@ const CPVCIntro = () => {
 
                   </p>
 
-                  <h3 className="mt-2 text-xl font-semibold text-black">
+                  <h3 className="mt-3 text-lg sm:text-xl font-semibold text-black leading-snug">
 
                     Hot & Cold Water
 
                   </h3>
+
                 </div>
+
               </div>
+
             </div>
 
-            {/* RIGHT */}
-            <div className="relative min-h-[520px] lg:min-h-full flex items-center justify-center overflow-hidden">
+            {/* ================= RIGHT ================= */}
+
+                        {/* ================= RIGHT ================= */}
+            <div className="hidden lg:flex relative min-h-[620px] xl:min-h-[720px] items-center justify-center overflow-hidden">
 
               {/* Large Background Text */}
-              <h3 className="absolute text-6xl lg:text-[130px] font-semibold tracking-tight text-[#8a2967]/[0.05] whitespace-nowrap">
-
+              <h3
+                className="
+                  absolute
+                  select-none
+                  pointer-events-none
+                  font-semibold
+                  tracking-tight
+                  whitespace-nowrap
+                  text-[#8a2967]/[0.05]
+                  text-[120px]
+                  xl:text-[160px]
+                  2xl:text-[190px]
+                "
+              >
                 FITTINGS
-
               </h3>
 
               {/* Product Image */}
-              {/* Product Image */}
-<div className="relative z-10 w-[420px] sm:w-[520px] lg:w-[640px] aspect-square scale-[1.12]">
-
-  <Image
-    src={CPVCPipeImg}
-    alt="C-PVC Plain Fittings"
-    fill
-    priority
-    className="object-contain"
-  />
-</div>
+              <div
+                className="
+                  relative
+                  z-10
+                  w-[320px]
+                  md:w-[420px]
+                  lg:w-[520px]
+                  xl:w-[640px]
+                  2xl:w-[720px]
+                  aspect-square
+                "
+              >
+                <Image
+                  src={CPVCPipeImg}
+                  alt="C-PVC Plain Fittings"
+                  fill
+                  priority
+                  className="object-contain"
+                />
+              </div>
 
               {/* Floating Technical Box */}
-              <div className="absolute bottom-6 left-6 bg-white border border-black/10 rounded-[28px] px-5 py-4 shadow-sm">
-
+              <div
+                className="
+                  absolute
+                  left-8
+                  bottom-8
+                  xl:left-10
+                  xl:bottom-10
+                  bg-white
+                  border
+                  border-black/10
+                  rounded-[24px]
+                  xl:rounded-[30px]
+                  px-6
+                  py-5
+                  shadow-lg
+                  backdrop-blur-sm
+                "
+              >
                 <p className="text-sm text-black/45">
 
                   Infrastructure Grade
 
                 </p>
 
-                <h3 className="mt-1 text-xl font-semibold text-black">
+                <h3 className="mt-2 text-xl xl:text-2xl font-semibold text-black leading-tight">
 
                   Leak-Proof • Durable
 
                 </h3>
               </div>
+
             </div>
+
           </div>
         </div>
       </div>

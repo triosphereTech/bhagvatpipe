@@ -38,9 +38,9 @@ const AboutStory = () => {
         </div>
 
         {/* Main Story */}
-        <div className="mt-8 max-w-5xl">
+        <div className="mt-4 max-w-5xl">
 
-          <h2 className="text-5xl md:text-6xl xl:text-4xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="text-[20px] md:text-[22px] lg:text-[28px] leading-tight tracking-tight font-semibold text-gray-700">
 
             Bhagvat Pipes was built with a vision to deliver
 
@@ -53,7 +53,7 @@ const AboutStory = () => {
 
           </h2>
 
-          <p className="mt-8 text-lg leading-8 text-black/60 max-w-3xl">
+          <p className="mt-2 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-3xl">
 
             From residential plumbing systems to industrial
             infrastructure applications, Bhagvat Pipes focuses
@@ -65,10 +65,10 @@ const AboutStory = () => {
         </div>
 
         {/* Divider */}
-        <div className="mt-16 h-px w-full bg-black/8"></div>
+        <div className="mt-10 h-px w-full bg-black/8"></div>
 
         {/* Stats Strip */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-10 py-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-10 py-10">
 
           {stats.map((item, index) => (
             <div
@@ -76,13 +76,13 @@ const AboutStory = () => {
               className="lg:border-r lg:border-black/8 last:border-none lg:pr-10"
             >
 
-              <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-black">
+              <h3 className="text-md md:text-3xl font-semibold tracking-tight text-black">
 
                 {item.value}
 
               </h3>
 
-              <p className="mt-3 text-base text-black/55">
+              <p className="mt-1 text-xs lg:text-base text-black/55">
 
                 {item.label}
 

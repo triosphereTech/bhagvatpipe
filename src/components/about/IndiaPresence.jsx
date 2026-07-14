@@ -37,7 +37,7 @@ const highlightedStates = [
 
 const IndiaPresence = () => {
   return (
-    <section className="w-full bg-white px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-white px-4 py-14 sm:py-16 lg:py-20 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
@@ -55,7 +55,7 @@ const IndiaPresence = () => {
             </p>
           </div>
 
-          <h2 className="mt-7 text-5xl md:text-6xl xl:text-5xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center">
 
             Supplying Reliable
             <span className="text-[#8a2967]">
@@ -68,7 +68,7 @@ const IndiaPresence = () => {
 
           </h2>
 
-          <p className="mt-8 text-lg leading-8 text-black/60 max-w-3xl">
+          <p className="mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-3xl">
 
             Bhagvat Pipes continues to support residential,
             commercial, and industrial infrastructure projects
@@ -79,7 +79,7 @@ const IndiaPresence = () => {
         </div>
 
         {/* Map Container */}
-        <div className="mt-20 rounded-[40px] border border-black/10 bg-[#8a29660e] p-6 sm:p-10 lg:p-14 overflow-hidden">
+        <div className="mt-12 md:mt-14 rounded-[40px] border border-black/10 bg-[#8a29660e] p-6 sm:p-10 lg:p-12 overflow-hidden">
 
           <div className="relative flex items-center justify-center">
 

@@ -35,26 +35,26 @@ const products = [
 
 const ProductSection = () => {
   return (
-    <section className="w-full bg-linear-to-b from-[#8e2f6d0c] to-white px-4 pb-20 md:pb-28 overflow-hidden">
+    <section className="w-full bg-linear-to-b from-[#8e2f6d0c] to-white px-4 pb-14 md:pb-12 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
         {/* Top Area */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 mb-14">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10 md:mb-12">
 
           {/* Left */}
           <div className="max-w-2xl">
 
             <div className="flex items-center gap-3 mb-6">
 
-              <div className="w-10 h-[2px] bg-black/50 rounded-full"></div>
+              <div className="w-5 h-[2px] bg-black/50 rounded-full"></div>
 
               <p className="uppercase tracking-[0.22em] text-xs sm:text-sm text-black/50 font-medium">
                 Product Ecosystem
               </p>
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-normal text-black">
+            <h2 className="text-[26px] md:text-[34px] lg:text-[44px] leading-tight font-semibold tracking-normal text-black">
 
               Built For
              {" "}
@@ -70,7 +70,7 @@ const ProductSection = () => {
           {/* Right */}
           <div className="max-w-xl">
 
-            <p className="text-base sm:text-lg leading-relaxed text-black/60">
+            <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60">
 
               Bhagvat Pipes manufactures premium CPVC, UPVC,
               and SWR piping systems designed for residential,
@@ -104,7 +104,7 @@ const ProductSection = () => {
 
                   </div>
 
-                  <h3 className="mt-6 text-3xl sm:text-4xl font-semibold tracking-[-0.04em] text-black">
+                  <h3 className="mt-6 text-2xl lg:text-3xl font-semibold text-black">
 
                     {item.title}
 
@@ -155,7 +155,7 @@ const ProductSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6 bg-white rounded-[32px] p-7 sm:p-10 border border-black/5">
+        <div className="mt-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 bg-white rounded-[32px] p-7 sm:p-10 border border-black/5">
 
           <div>
 
@@ -163,7 +163,7 @@ const ProductSection = () => {
               Industrial Grade Quality
             </p>
 
-            <h3 className="text-3xl sm:text-4xl font-semibold tracking-[-0.04em] text-black">
+            <h3 className="text-3xl sm:text-4xl font-semibold  text-black">
 
               Trusted Piping Systems
               <br className="hidden sm:block" />
@@ -173,7 +173,7 @@ const ProductSection = () => {
             </h3>
           </div>
 
-          <button className="h-14 px-8 rounded-full bg-black text-white text-sm sm:text-base font-medium hover:scale-[1.03] transition-all duration-300 w-fit">
+          <button className="h-12 px-8 rounded-full border border-gray-300 bg-black text-white text-sm sm:text-base font-medium hover:scale-[1.03] transition-all duration-300 w-fit">
 
             Download Catalogue
 

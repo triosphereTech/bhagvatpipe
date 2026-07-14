@@ -23,7 +23,7 @@ function page() {
 <AboutManifesto/>
 <WaterAwareness/>
 <CertificationsSection/>
-<IndiaPresence/>
+{/* <IndiaPresence/> */}
 <AboutCTA/>
     </>
   )

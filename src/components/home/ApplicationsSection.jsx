@@ -12,10 +12,10 @@ const ApplicationsSection = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* TOP HEADING */}
-        <div className="text-center max-w-5xl mx-auto">
+        <div className="text-left md:text-center max-w-5xl mx-auto">
 
         
-          <h2 className="text-5xl md:text-6xl xl:text-6xl font-semibold tracking-normal text-black ">
+          <h2 className="text-[26px] md:text-[34px] lg:text-[44px] leading-tight font-semibold tracking-normal text-black ">
 
             Built For
             <br />
@@ -25,7 +25,7 @@ const ApplicationsSection = () => {
 
           </h2>
 
-          <p className="mt-8 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed text-black/60">
+          <p className="mt-3 max-w-2xl mx-auto text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60">
 
             Bhagvat piping systems are engineered for residential,
             industrial, commercial, and water infrastructure
@@ -34,139 +34,167 @@ const ApplicationsSection = () => {
           </p>
         </div>
 
-        {/* ROW 1 */}
-        <div className="mt-24 grid lg:grid-cols-2 gap-12 items-center">
+{/* ROW 1 */}
+<div className="mt-8 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
-          {/* Image */}
-          <div className="relative overflow-hidden rounded-[40px] h-[500px]">
+  {/* Image */}
+  <div
+    className="
+      relative
+      overflow-hidden
+      rounded-[24px]
+      sm:rounded-[30px]
+      lg:rounded-[40px]
+      aspect-[4/3]
+      lg:aspect-[5/4]
+      w-full
+    "
+  >
+    <Image
+      src={ResidentialImg}
+      alt="Residential"
+      fill
+      className="object-cover object-center"
+      sizes="(max-width: 640px) 100vw,
+             (max-width: 1024px) 100vw,
+             50vw"
+    />
+  </div>
 
-            <Image
-              src={ResidentialImg}
-              alt="Residential"
-              fill
-              className="object-cover"
-            />
-          </div>
+  {/* Content */}
+  <div>
+    <p className="uppercase tracking-[0.2em] text-xs text-[#8a2967]/50 mb-5">
+      Residential Systems
+    </p>
 
-          {/* Content */}
-          <div>
+    <h3 className="text-[20px] md:text-[30px] lg:text-[38px] leading-tight font-normal">
+      Smart Plumbing
+      <br />
+      Solutions For
+      <br />
+      Modern Living
+    </h3>
 
-            <p className="uppercase tracking-[0.2em] text-xs text-[#8a2967]/50 mb-5">
+    <p className="mt-5 md:mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-xl">
+      Premium CPVC and UPVC systems designed for homes,
+      apartments, and commercial spaces with superior
+      durability, pressure handling, and clean water flow.
+    </p>
+  </div>
+</div>
 
-              Residential Systems
+{/* ROW 2 */}
+<div className="mt-10 md:mt-16 lg:mt-20 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
-            </p>
+  {/* Content */}
+  <div className="order-2 lg:order-1">
+    <p className="uppercase tracking-[0.2em] text-xs text-[#8a2967]/50 mb-5">
+      Industrial Applications
+    </p>
 
-            <h3 className="text-3xl md:text-4xl xl:text-5xl leading-[0.95] font-semibold ">
+    <h3 className="text-[20px] md:text-[30px] lg:text-[38px] leading-tight font-normal">
+      Engineered For
+      <br />
+      Heavy-Duty
+      <br />
+      Performance
+    </h3>
 
-              Smart Plumbing
-              Solutions For
-              Modern Living
+    <p className="mt-5 md:mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-xl">
+      Industrial-grade pipeline systems built to withstand
+      pressure-intensive environments and demanding
+      operational infrastructure.
+    </p>
+  </div>
 
-            </h3>
+  {/* Image */}
+  <div
+    className="
+      order-1 lg:order-2
+      relative
+      overflow-hidden
+      rounded-[24px]
+      sm:rounded-[30px]
+      lg:rounded-[40px]
+      aspect-[4/3]
+      lg:aspect-[5/4]
+      w-full
+    "
+  >
+    <Image
+      src={IndustrialImg}
+      alt="Industrial"
+      fill
+      className="object-cover object-center"
+      sizes="(max-width: 640px) 100vw,
+             (max-width: 1024px) 100vw,
+             50vw"
+    />
+  </div>
+</div>
 
-            <p className="mt-7 text-lg leading-relaxed text-black/60 max-w-xl">
+{/* FULL WIDTH STRIP */}
+<div
+  className="
+    mt-5
+    md:mt-16
+    lg:mt-20
+    relative
+    overflow-hidden
+    rounded-[24px]
+    sm:rounded-[30px]
+    lg:rounded-[40px]
+    aspect-[16/12]
+    md:aspect-[16/10]
+    lg:aspect-[16/8]
+    w-full
+  "
+>
+  {/* Background */}
+  <Image
+    src={DrainageImg}
+    alt="Drainage"
+    fill
+    className="object-cover object-center"
+    sizes="100vw"
+  />
 
-              Premium CPVC and UPVC systems designed for homes,
-              apartments, and commercial spaces with superior
-              durability, pressure handling, and clean water flow.
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-            </p>
-          </div>
+  {/* Content */}
+  <div className="relative z-10 h-full flex flex-col justify-end p-5 sm:p-8 md:p-10 lg:p-16">
+
+    <p className="hidden lg:block uppercase tracking-[0.2em] text-xs sm:text-sm text-white/70 mb-4">
+      SWR & Drainage Systems
+    </p>
+
+    <h3 className="text-[20px] md:text-[30px] lg:text-[38px] leading-tight font-normal text-white">
+      Water Management
+      <br />
+      Solutions Designed
+      <br />
+      For Modern Cities
+    </h3>
+
+    <div className="hidden lg:flex mt-6 md:mt-8 lg:mt-10 flex-wrap gap-3 md:gap-4">
+      {[
+        "Leak Resistant",
+        "Industrial Grade",
+        "Long Lifecycle",
+        "Pressure Tested",
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="h-10 md:h-12 px-4 md:px-5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center text-xs md:text-sm text-white"
+        >
+          {item}
         </div>
+      ))}
+    </div>
 
-        {/* ROW 2 */}
-        <div className="mt-28 grid lg:grid-cols-2 gap-12 items-center">
-
-          {/* Content */}
-          <div className="order-2 lg:order-1">
-
-            <p className="uppercase tracking-[0.2em] text-xs text-[#8a2967]/50 mb-5">
-
-              Industrial Applications
-
-            </p>
-
-            <h3 className="text-3xl md:text-4xl xl:text-5xl leading-[0.95] font-semibold ">
-
-              Engineered For
-              Heavy-Duty
-              Performance
-
-            </h3>
-
-            <p className="mt-7 text-lg leading-relaxed text-black/60 max-w-xl">
-
-              Industrial-grade pipeline systems built to withstand
-              pressure-intensive environments and demanding
-              operational infrastructure.
-
-            </p>
-          </div>
-
-          {/* Image */}
-          <div className="order-1 lg:order-2 relative overflow-hidden rounded-[40px] h-[500px]">
-
-            <Image
-              src={IndustrialImg}
-              alt="Industrial"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-
-        {/* FULL WIDTH STRIP */}
-        <div className="mt-28 relative rounded-[40px] overflow-hidden h-[650px]">
-
-          {/* Background */}
-          <Image
-            src={DrainageImg}
-            alt="Drainage"
-            fill
-            className="object-cover"
-          />
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-linear-to-bl from-transparent to-black"></div>
-
-          {/* Content */}
-          <div className="relative z-10 h-full flex flex-col justify-end p-8 sm:p-12 lg:p-16">
-
-            <p className="uppercase tracking-[0.2em] text-xs sm:text-sm text-white/60 mb-5">
-
-              SWR & Drainage Systems
-
-            </p>
-
-            <h3 className="text-[24px] md:text-[38px]   font-semibold text-white max-w-5xl">
-
-              Water Management
-              Solutions  <br />Designed
-              For Modern Cities
-
-            </h3>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-
-              {[
-                "Leak Resistant",
-                "Industrial Grade",
-                "Long Lifecycle",
-                "Pressure Tested",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="h-12 px-5 rounded-full bg-white/10 backdrop-blur-md border border-white/10 flex items-center text-sm text-white"
-                >
-
-                  {item}
-
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+  </div>
+</div>
       </div>
     </section>
   );

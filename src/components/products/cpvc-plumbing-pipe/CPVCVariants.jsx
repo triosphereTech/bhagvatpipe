@@ -40,7 +40,7 @@ const variants = [
 
 const CPVCVariants = () => {
   return (
-    <section className="w-full bg-white px-4 py-20 sm:py-24 overflow-hidden">
+    <section className="w-full bg-white px-4 py-14 sm:py-16 lg:py-20 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
@@ -58,7 +58,7 @@ const CPVCVariants = () => {
             </p>
           </div>
 
-          <h2 className="mt-7 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center">
 
             Industrial Grade
             <span className="text-[#8a2967]">
@@ -69,7 +69,7 @@ const CPVCVariants = () => {
         </div>
 
         {/* Variant Panels */}
-        <div className="mt-20 space-y-10">
+        <div className="mt-12 space-y-8">
 
           {variants.map((item, index) => (
             <div
@@ -127,14 +127,14 @@ const CPVCVariants = () => {
                   </p>
 
                   {/* Title */}
-                  <h3 className="mt-5 text-4xl sm:text-5xl leading-tight tracking-tight font-semibold text-black max-w-2xl">
+                  <h3 className="mt-5 text-[30px] md:text-[38px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black max-w-2xl">
 
                     {item.title}
 
                   </h3>
 
                   {/* Description */}
-                  <p className="mt-7 text-lg leading-8 text-black/60 max-w-2xl">
+                  <p className="mt-5 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-2xl">
 
                     {item.desc}
 

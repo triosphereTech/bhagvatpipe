@@ -5,7 +5,7 @@ import AboutImg from "../../../public/Images/about/heroab.png";
 
 const AboutHero = () => {
   return (
-    <section className="w-full bg-white px-4 py-14 sm:py-16 overflow-hidden">
+    <section className="w-full bg-white px-4 py-10 sm:py-14 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
@@ -28,7 +28,7 @@ const AboutHero = () => {
             </div>
 
             {/* Heading */}
-            <h1 className="text-5xl md:text-6xl xl:text-5xl font-semibold leading-tight tracking-tight text-black">
+            <h1 className="text-[26px] md:text-[34px] lg:text-[44px] font-semibold leading-tight tracking-tight text-black">
 
               Building Strong &
               Reliable
@@ -42,7 +42,7 @@ const AboutHero = () => {
             </h1>
 
             {/* Description */}
-            <p className="mt-7 text-lg leading-8 text-black/60 max-w-xl">
+            <p className="mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-xl">
 
               Bhagvat Pipes manufactures premium CPVC,
               UPVC, and SWR piping systems designed for

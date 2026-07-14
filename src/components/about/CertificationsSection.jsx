@@ -21,7 +21,7 @@ const standards = [
 
 const CertificationsSection = () => {
   return (
-    <section className="w-full bg-white px-4 py-20 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-white px-4 py-5 lg:py-10 overflow-hidden">
 
       <div className="max-w-6xl mx-auto">
 
@@ -39,7 +39,7 @@ const CertificationsSection = () => {
             </p>
           </div>
 
-          <h2 className="mt-7 text-5xl md:text-6xl xl:text-5xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-left">
 
             Certified &
             <span className="text-[#8a2967]">
@@ -52,7 +52,7 @@ const CertificationsSection = () => {
         </div>
 
         {/* Standards List */}
-        <div className="mt-16 border-t border-black/8">
+        <div className="mt-10 md:mt-12 border-t border-black/8">
 
           {standards.map((item, index) => (
             <div
@@ -79,7 +79,7 @@ const CertificationsSection = () => {
               {/* Right */}
               <div>
 
-                <p className="text-lg leading-8 text-black/60 max-w-2xl">
+                <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-2xl">
 
                   {item.desc}
 
@@ -89,15 +89,7 @@ const CertificationsSection = () => {
           ))}
         </div>
 
-        {/* Bottom Typography */}
-        <div className="mt-20 overflow-hidden">
-
-          <h3 className="text-5xl sm:text-7xl lg:text-9xl font-semibold tracking-tight text-black/[0.04] whitespace-nowrap">
-
-            ENGINEERED STANDARDS
-
-          </h3>
-        </div>
+      
       </div>
     </section>
   );

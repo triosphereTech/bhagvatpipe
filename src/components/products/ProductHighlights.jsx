@@ -69,7 +69,7 @@ const ProductHighlights = () => {
     <section className="w-full bg-white overflow-hidden">
 
       {/* ================= ADVANTAGES ================= */}
-      <div className="px-4 py-20 sm:py-24 border-t border-black/8">
+      <div className="px-4 py-14 sm:py-16 lg:py-20 border-t border-black/8">
 
         <div className="max-w-7xl mx-auto">
 
@@ -89,7 +89,7 @@ const ProductHighlights = () => {
                 </p>
               </div>
 
-              <h2 className="mt-7 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black">
+              <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center">
 
                 Built For
                 <span className="text-[#8a2967]">
@@ -101,7 +101,7 @@ const ProductHighlights = () => {
               </h2>
             </div>
 
-            <p className="max-w-lg text-lg leading-8 text-black/60">
+            <p className="max-w-lg text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60">
 
               Bhagvat Pipes are engineered with
               durability-focused materials and
@@ -112,7 +112,7 @@ const ProductHighlights = () => {
           </div>
 
           {/* Horizontal Advantages */}
-          <div className="relative mt-20 overflow-hidden">
+          <div className="relative mt-12 md:mt-14 overflow-hidden">
 
           {/* Left Fade */}
           <div className="absolute left-0 top-0 z-20 h-full w-24 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
@@ -163,7 +163,7 @@ const ProductHighlights = () => {
       </div>
 
       {/* ================= APPLICATIONS ================= */}
-      <div className="px-4 py-20 sm:py-24 bg-[#8a29660e]">
+      <div className="px-4 py-14 sm:py-16 lg:py-20 bg-[#8a29660e]">
 
         <div className="max-w-7xl mx-auto">
 
@@ -183,7 +183,7 @@ const ProductHighlights = () => {
               <div className="w-10 h-px bg-[#8a2967]/30"></div>
             </div>
 
-            <h2 className="mt-7 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black">
+            <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center">
 
               Infrastructure Solutions
               <br />
@@ -197,7 +197,7 @@ const ProductHighlights = () => {
           </div>
 
           {/* Application Grid */}
-          <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="mt-12 md:mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {applications.map((item, index) => (
               <div
@@ -206,7 +206,7 @@ const ProductHighlights = () => {
               >
 
                 {/* Icon */}
-                <div className="w-18 h-18 rounded-3xl bg-[#8a29660e] border border-black/10 flex items-center justify-center text-4xl text-[#8a2967]">
+                <div className="w-16 h-16 rounded-3xl bg-[#8a29660e] border border-black/10 flex items-center justify-center text-3xl text-[#8a2967]">
 
                   {item.icon}
 
@@ -238,7 +238,7 @@ const ProductHighlights = () => {
           </div>
 
           {/* Bottom Typography */}
-          <div className="mt-20 overflow-hidden">
+          <div className="mt-12 overflow-hidden">
 
             <h3 className="text-5xl sm:text-7xl lg:text-7xl font-semibold tracking-tight text-black/[0.04] whitespace-nowrap text-center">
 

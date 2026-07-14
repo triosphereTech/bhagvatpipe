@@ -17,21 +17,21 @@ const WaterAwareness = () => {
         {/* Top Label */}
         <div className="flex items-center justify-center gap-3">
 
-          <div className="w-10 h-px bg-[#8a2967]/30"></div>
-
+          {/* <div className="w-10 h-px bg-[#8a2967]/30"></div> */}
+{/* 
           <p className="text-sm font-medium tracking-wide uppercase text-[#8a2967]">
 
             Water Awareness
 
-          </p>
+          </p> */}
 
-          <div className="w-10 h-px bg-[#8a2967]/30"></div>
+          {/* <div className="w-10 h-px bg-[#8a2967]/30"></div> */}
         </div>
 
         {/* Main Heading */}
-        <div className="mt-8 text-center">
+        <div className="mt-5 text-left md:text-center">
 
-          <h2 className="text-5xl md:text-6xl xl:text-5xl leading-tight tracking-tight font-semibold text-black">
+          <h2 className="text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black">
 
             “भागवत पाइप:
             <span className="text-[#8a2967]">
@@ -44,7 +44,7 @@ const WaterAwareness = () => {
 
           </h2>
 
-          <p className="mt-8 max-w-3xl mx-auto text-lg leading-8 text-black/65">
+          <p className="mt-6 max-w-3xl mx-auto text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/65">
 
             जल ही जीवन है — और हर बूंद की सुरक्षा हमारी
             सामूहिक ज़िम्मेदारी। भागवत पाइप केवल पाइपिंग
@@ -55,12 +55,12 @@ const WaterAwareness = () => {
         </div>
 
         {/* Thought Lines */}
-        <div className="mt-16 border-t border-black/8">
+        <div className="mt-10 md:mt-12 border-t border-black/8">
 
           {waterThoughts.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 py-8 border-b border-black/8"
+              className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 py-3 md:py-6 border-b border-black/8"
             >
 
               {/* Number */}
@@ -71,7 +71,7 @@ const WaterAwareness = () => {
               </div>
 
               {/* Text */}
-              <p className="flex-1 text-xl sm:text-2xl leading-relaxed text-black font-medium md:px-10">
+              <p className="flex-1 text-lg sm:text-xl leading-relaxed text-black font-medium md:px-10">
 
                 {item}
 
@@ -84,7 +84,7 @@ const WaterAwareness = () => {
         </div>
 
         {/* Bottom Statement */}
-        <div className="mt-16 text-center">
+        <div className="mt-10 text-center">
 
           <p className="text-sm tracking-[0.25em] uppercase text-black/40">
 

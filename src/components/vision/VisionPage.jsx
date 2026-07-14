@@ -52,11 +52,11 @@ const VisionPage = () => {
     <section className="w-full bg-white overflow-hidden">
 
       {/* HERO */}
-      <section className="w-full px-4 pt-16 pb-20 sm:pb-24">
+      <section className="w-full px-4 pt-2 pb-14 sm:pb-16 lg:pb-20">
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="grid lg:grid-cols-[1fr_0.8fr] gap-16 items-end">
+          <div className="grid lg:grid-cols-[1fr_0.8fr] gap-5 items-end">
 
             {/* LEFT */}
             <div>
@@ -64,22 +64,21 @@ const VisionPage = () => {
               {/* Label */}
               <div className="flex items-center gap-3">
 
-                <div className="w-10 h-px bg-[#8a2967]/30"></div>
+                {/* <div className="w-10 h-px bg-[#8a2967]/30"></div> */}
 
-                <p className="text-sm font-medium tracking-wide uppercase text-[#8a2967]">
+                {/* <p className="text-sm font-medium tracking-wide uppercase text-[#8a2967]">
 
                   Our Vision
 
-                </p>
+                </p> */}
               </div>
 
               {/* Heading */}
-              <h1 className="mt-8 text-5xl md:text-6xl xl:text-6xl leading-[0.95]  font-normal text-black">
+              <h1 className="mt-3 text-[26px] md:text-[34px] lg:text-[44px] leading-tight font-normal text-black">
 
                 Building
-                <br />
-
-                India's Future
+              
+                India&apos;s Future
                 <br />
 
                 Through
@@ -97,7 +96,7 @@ const VisionPage = () => {
             {/* RIGHT */}
             <div>
 
-              <p className="text-xl leading-9 text-black/60">
+              {/* <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60">
 
                 Bhagvat Pipe envisions becoming
                 India’s most trusted provider of
@@ -105,10 +104,10 @@ const VisionPage = () => {
                 systems, delivering sustainable,
                 efficient.
 
-              </p>
+              </p> */}
 
               {/* Small Stats */}
-              <div className="mt-12 grid grid-cols-2 gap-6">
+              <div className="mt-5 grid grid-cols-2 gap-5">
 
                 <div className="rounded-[28px] border border-black/10 bg-[#8a29660e] p-6">
 
@@ -118,7 +117,7 @@ const VisionPage = () => {
 
                   </p>
 
-                  <h3 className="mt-3 text-3xl leading-none font-semibold text-black">
+                  <h3 className="mt-3 text-lg lg:text-3xl leading-none font-semibold text-black">
 
                     Quality
                     <br />
@@ -136,7 +135,7 @@ const VisionPage = () => {
 
                   </p>
 
-                  <h3 className="mt-3 text-3xl leading-none font-semibold text-black">
+                  <h3 className="mt-3 text-lg lg:text-3xl leading-none font-semibold text-black">
 
                     Sustainable
                     <br />
@@ -150,9 +149,9 @@ const VisionPage = () => {
           </div>
 
           {/* Bottom Line */}
-          <div className="mt-20 border-t border-black/10 pt-10">
+          <div className="mt-12 border-t border-black/10 pt-8">
 
-            <p className="max-w-5xl text-5xl md:text-6xl xl:text-3xl leading-[1.4] tracking-tight text-black/75 font-medium">
+            <p className="max-w-5xl text-[16px] md:text-[30px] lg:text-[26px] leading-snug tracking-tight text-black/75 font-medium">
 
               To maximize product placement and
               expand the range of premium CPVC and
@@ -166,7 +165,7 @@ const VisionPage = () => {
       </section>
 
       {/* VISION GRID */}
-      <section className="w-full px-4 pb-20 sm:pb-24 lg:pb-28">
+      <section className="w-full px-4 pb-14 sm:pb-16 lg:pb-20">
 
         <div className="max-w-7xl mx-auto">
 
@@ -186,7 +185,7 @@ const VisionPage = () => {
                 </p>
               </div>
 
-              <h2 className="mt-6 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black">
+              <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center">
 
                 Purpose Driven
                 <span className="text-[#8a2967]">
@@ -196,7 +195,7 @@ const VisionPage = () => {
               </h2>
             </div>
 
-            <p className="max-w-xl text-lg leading-8 text-black/60">
+            <p className="max-w-xl text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60">
 
               Our vision extends beyond manufacturing —
               focusing on innovation, sustainability,
@@ -207,7 +206,7 @@ const VisionPage = () => {
           </div>
 
           {/* Grid */}
-          <div className="mt-16 grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
+          <div className="mt-10 md:mt-12 grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
 
             {visions.map((item, index) => (
               <div
@@ -233,7 +232,7 @@ const VisionPage = () => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="mt-8 text-[32px] leading-[1.05] tracking-tight font-semibold text-black">
+                  <h3 className="mt-6 text-[26px] leading-tight tracking-tight font-semibold text-black">
 
                     {item.title}
 
@@ -267,14 +266,7 @@ const VisionPage = () => {
           </div>
 
           {/* Large Typography */}
-          <div className="mt-24 overflow-hidden">
-
-            <h3 className="text-6xl sm:text-8xl lg:text-[170px] leading-none font-semibold tracking-tight text-black/[0.04] whitespace-nowrap">
-
-              INDIA • INFRASTRUCTURE • FUTURE
-
-            </h3>
-          </div>
+         
         </div>
       </section>
     </section>

@@ -33,13 +33,13 @@ const ProductHero = () => {
         </div> */}
 
         {/* Main Layout */}
-        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-end pt-12">
+        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-end pt-10">
 
           {/* LEFT CONTENT */}
           <div>
 
             {/* Heading */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl leading-none tracking-wide font-semibold text-black">
+            <h1 className="text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-wide font-semibold text-black">
 
               Engineered
               <br />
@@ -52,7 +52,7 @@ const ProductHero = () => {
             </h1>
 
             {/* Description */}
-            <p className="mt-8 text-lg leading-8 text-black/60 max-w-lg">
+            <p className="mt-6 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60 max-w-lg">
 
               Explore Bhagvat’s premium range of
               CPVC, UPVC, and SWR piping systems
@@ -62,7 +62,7 @@ const ProductHero = () => {
             </p>
 
             {/* Bottom Row */}
-            <div className="mt-12 flex flex-wrap gap-10">
+            <div className="mt-8 flex flex-wrap gap-8">
 
               <div>
 

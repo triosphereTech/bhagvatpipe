@@ -55,7 +55,7 @@ const products = [
 
 const ProductCategories = () => {
   return (
-    <section className="w-full bg-[#8a29660e] px-4 py-20 sm:py-24 overflow-hidden">
+    <section className="w-full bg-[#8a29660e] px-4 py-14 sm:py-16 lg:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
@@ -68,7 +68,7 @@ const ProductCategories = () => {
               </p>
             </div>
 
-            <h2 className="mt-6 text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight font-semibold text-black">
+            <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center">
               Complete
               <span className="text-[#8a2967]"> Pipe & Fittings</span>
               <br />
@@ -76,7 +76,7 @@ const ProductCategories = () => {
             </h2>
           </div>
 
-          <p className="max-w-xl text-base sm:text-lg leading-8 text-black/60">
+          <p className="max-w-xl text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-black/60">
             Bhagvat Pipes offers a complete ecosystem of CPVC, UPVC and SWR
             piping systems engineered for residential, commercial and industrial
             infrastructure projects.
@@ -84,7 +84,7 @@ const ProductCategories = () => {
         </div>
 
         {/* Products */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+        <div className="mt-10 md:mt-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
           {products.map((item, index) => (
             <div
               key={index}
