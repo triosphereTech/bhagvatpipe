@@ -6,12 +6,16 @@ import India from "@react-map/india";
 
 const highlightedStates = [
   {
-    state: "Gujarat",
-    code: "GJ",
+    state: "Jammu and Kashmir",
+    code: "JK",
   },
   {
-    state: "Maharashtra",
-    code: "MH",
+    state: "Punjab",
+    code: "PB",
+  },
+  {
+    state: "Delhi",
+    code: "DL",
   },
   {
     state: "Rajasthan",
@@ -22,8 +26,16 @@ const highlightedStates = [
     code: "MP",
   },
   {
-    state: "Delhi",
-    code: "DL",
+    state: "Chhattisgarh",
+    code: "CT",
+  },
+  {
+    state: "Maharashtra",
+    code: "MH",
+  },
+  {
+    state: "Telangana",
+    code: "TG",
   },
   {
     state: "Karnataka",
@@ -32,6 +44,10 @@ const highlightedStates = [
   {
     state: "Tamil Nadu",
     code: "TN",
+  },
+  {
+    state: "Assam",
+    code: "AS",
   },
 ];
 

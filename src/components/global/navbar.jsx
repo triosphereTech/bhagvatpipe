@@ -34,6 +34,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About us", path: "/aboutus" },
     { name: "Products", path: "/products" },
+    {name: "Blog", path: "/blog" },
     { name: "Vision", path: "/vision" },
     { name: "Mission", path: "/mission" },
   ];
@@ -53,7 +54,7 @@ const Navbar = () => {
       items: [
         { name: "SWR Ring Fit", path: "/products/swr-ring-fittings", desc: "Soil, waste & rainwater systems" },
         { name: "SWR Self Fit", path: "/products/swr-self-fittings", desc: "Rigid PVC drain & vent pipes" },
-        { name: "Column Pipes", path: "/products/column-pipes", desc: "Submersible pump delivery pipes" },
+        // { name: "Column Pipes", path: "/products/column-pipes", desc: "Submersible pump delivery pipes" },
       ],
     },
     

@@ -33,7 +33,7 @@ const ProductHero = () => {
         </div> */}
 
         {/* Main Layout */}
-        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-end pt-10">
+        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-start pt-10">
 
           {/* LEFT CONTENT */}
           <div>
@@ -130,12 +130,12 @@ const ProductHero = () => {
             </div>
 
             {/* Floating Bottom Strip */}
-            <div className="relative z-10 -mt-8 mx-6 sm:mx-10 bg-white border border-black/10 rounded-[28px] px-6 py-5 shadow-sm">
+            <div className="relative z-10 -mt-8 mx-6 sm:mx-10 bg-white/50 backdrop-blur-sm w-fit  border border-black/10 rounded-[28px] px-6 py-5 my-2 shadow-sm">
 
               <div className="flex flex-wrap items-center justify-between gap-6">
 
                 {/* Left */}
-                <div>
+                {/* <div>
 
                   <p className="text-sm text-black/45">
 
@@ -148,7 +148,7 @@ const ProductHero = () => {
                     Reliable Industrial Performance
 
                   </h3>
-                </div>
+                </div> */}
 
                 {/* Right Tags */}
                 <div className="flex flex-wrap gap-3">
