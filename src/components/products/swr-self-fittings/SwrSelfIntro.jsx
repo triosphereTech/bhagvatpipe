@@ -1,15 +1,17 @@
 import React from 'react'
 import { HiOutlineArrowRight } from "react-icons/hi2";
+import Image from 'next/image'
+import HeroImg from "@/../public/Images/products/swr_self_fit.png"
 
 const SwrSelfIntro = () => {
 return (
     <section className="relative overflow-hidden bg-white pt-28 md:pt-32 pb-16 lg:pb-20">
       {/* Background */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#8a2967]/5 blur-3xl" />
 
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[#8a2967]/5 blur-3xl" />
-      </div>
+      </div> */}
 
       <div className="relative max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -87,7 +89,7 @@ return (
           <div className="relative">
             <div className="relative h-[600px]">
               {/* Main Circle */}
-              <div className="absolute inset-0 rounded-full border border-black/5 bg-gradient-to-br from-[#8a2967]/5 to-transparent" />
+              {/* <div className="absolute inset-0 rounded-full border border-black/5 bg-gradient-to-br from-[#8a2967]/5 to-transparent" /> */}
 
               {/* Center Product */}
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-56 h-56 rounded-[32px] bg-white border border-black/10 shadow-xl flex items-center justify-center">
@@ -96,21 +98,9 @@ return (
                 </span>
               </div>
 
-              {/* Floating Cards */}
-              <div className="absolute top-8 left-10 w-36 h-36 rounded-[28px] bg-white border border-black/10 shadow-lg flex items-center justify-center">
-                Bend 87.5°
-              </div>
-
-              <div className="absolute top-16 right-8 w-40 h-40 rounded-[28px] bg-white border border-black/10 shadow-lg flex items-center justify-center">
-                Coupler
-              </div>
-
-              <div className="absolute bottom-16 left-8 w-40 h-40 rounded-[28px] bg-white border border-black/10 shadow-lg flex items-center justify-center">
-                Reducer
-              </div>
-
-              <div className="absolute bottom-10 right-12 w-36 h-36 rounded-[28px] bg-white border border-black/10 shadow-lg flex items-center justify-center">
-                Vent Cowl
+              {/* Product Image */}
+              <div className="absolute  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] lg:w-[600px] lg:h-[600px]">
+                <Image src={HeroImg} alt="Self Fit Tee" layout="fill" objectFit="contain" />
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import HeroImg from "../../../public/Images/home/Heropipe.png";
+import HeroImg from "../../../public/Images/home/HeroN.png";
 import Link from "next/link";
 
 const Hero = () => {
@@ -113,10 +113,10 @@ const Hero = () => {
             <div className="hidden lg:flex items-end justify-center lg:justify-end px-4 sm:px-6 lg:px-0 pt-8 lg:pt-0">
 
               {/* White Circle */}
-              <div className="absolute bottom-[-60px] md:bottom-[-40px] xl:bottom-[-20px] w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[560px] md:h-[560px] xl:w-[640px] xl:h-[640px] bg-white rounded-full"></div>
+              {/* <div className="absolute bottom-[-60px] md:bottom-[-40px] xl:bottom-[-20px] w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[560px] md:h-[560px] xl:w-[640px] xl:h-[640px] bg-white rounded-full"></div> */}
 
               {/* Main Image */}
-              <div className="relative z-10 w-[300px] sm:w-[400px] md:w-[500px] xl:w-[680px] h-[380px] md:h-[600px] xl:h-[680px]">
+              <div className="relative z-10 hover:rotate-3 transition-all duration-300 w-[300px] sm:w-[400px] md:w-[500px] xl:w-[680px] h-[380px] md:h-[600px] xl:h-[680px]">
                 <Image
                   src={HeroImg}
                   alt="Bhagvat Pipe Products"

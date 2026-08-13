@@ -23,7 +23,6 @@ import ImgBallValve from "../../../../public/Images/products/cpvc/plain/BALLVALV
 import ImgReducerCoupler from "../../../../public/Images/products/cpvc/plain/REDUCERCOUPLER.jpeg";
 import ImgReducerBush from "../../../../public/Images/products/cpvc/plain/REDUCERBUSH.jpeg";
 import Img3In1WallMixer from "../../../../public/Images/products/cpvc/plain/3IN1WALLMIXER.png";
-import Img30One from "../../../../public/Images/products/cpvc/plain/3One.jpeg";
 import ImgConcealedValve from "../../../../public/Images/products/cpvc/plain/CONCEALEDVALVE.png";
 import ImgCPVCSolvent from "../../../../public/Images/products/cpvc/plain/CPVCSOLVENT.png";
 import ImgCrossTee from "../../../../public/Images/products/cpvc/plain/CROSSTEE.png";
@@ -34,118 +33,118 @@ import ImgReducerElbow from "../../../../public/Images/products/cpvc/plain/REDUC
 import ImgSocketThreadedNipple from "../../../../public/Images/products/cpvc/plain/SOCKETTANKNIPPLE.png";
 import ImgStepOverBend from "../../../../public/Images/products/cpvc/plain/STEPOVERBEND.png";
 
-const products = [
+const products = 
+[
   {
-    title: "90° Elbow",
-    desc: "Changes pipeline direction by 90° while maintaining smooth water flow.",
-    img: Img90D,
+    "title": "90° Elbow",
+    "desc": "Changes pipeline direction by 90° while maintaining smooth water flow.",
+    "img": "/Images/products/cpvc/plain/90d.png"
   },
   {
-    title: "Tee",
-    desc: "Three-way fitting for distributing water flow in multiple directions.",
-    img: ImgTee,
+    "title": "Tee",
+    "desc": "Three-way fitting for distributing water flow in multiple directions.",
+    "img": "/Images/products/cpvc/plain/Tee.jpeg"
   },
   {
-    title: "M.T.A.",
-    desc: "Connects C-PVC pipes with threaded metal or plastic fittings.",
-    img: ImgMTA,
+    "title": "M.T.A.",
+    "desc": "Connects C-PVC pipes with threaded metal or plastic fittings.",
+    "img": "/Images/products/cpvc/plain/MTA.jpeg"
   },
   {
-    title: "F.T.A.",
-    desc: "Provides secure connection with male-threaded fittings.",
-    img: ImgFTA,
+    "title": "F.T.A.",
+    "desc": "Provides secure connection with male-threaded fittings.",
+    "img": "/Images/products/cpvc/plain/FTA.jpeg"
   },
   {
-    title: "Coupler",
-    desc: "Used for joining two C-PVC pipes in a straight pipeline.",
-    img: ImgCoupler,
+    "title": "Coupler",
+    "desc": "Used for joining two C-PVC pipes in a straight pipeline.",
+    "img": "/Images/products/cpvc/plain/Coupler.jpeg"
   },
   {
-    title: "End Cap",
-    desc: "Seals the pipe end securely to prevent water leakage.",
-    img: ImgEndCap,
+    "title": "End Cap",
+    "desc": "Seals the pipe end securely to prevent water leakage.",
+    "img": "/Images/products/cpvc/plain/EndCap.png"
   },
   {
-    title: "Union",
-    desc: "Allows easy connection and disconnection without cutting pipes.",
-    img: ImgUnion,
+    "title": "Union",
+    "desc": "Allows easy connection and disconnection without cutting pipes.",
+    "img": "/Images/products/cpvc/plain/Union.jpeg"
   },
   {
-    title: "45 Degree Elbow",
-    desc: "Redirects pipeline flow at a 45° angle for smoother transitions.",
-    img: Img45D,
+    "title": "45 Degree Elbow",
+    "desc": "Redirects pipeline flow at a 45° angle for smoother transitions.",
+    "img": "/Images/products/cpvc/plain/45D.jpeg"
   },
   {
-    title: "Reducer Tee",
-    desc: "Connects pipes of different diameters with three-way flow.",
-    img: ImgReducerTee,
+    "title": "Reducer Tee",
+    "desc": "Connects pipes of different diameters with three-way flow.",
+    "img": "/Images/products/cpvc/plain/REDUCERTEE.png"
   },
   {
-    title: "Ball Valve",
-    desc: "Controls water flow efficiently with reliable shut-off operation.",
-    img: ImgBallValve,
+    "title": "Ball Valve",
+    "desc": "Controls water flow efficiently with reliable shut-off operation.",
+    "img": "/Images/products/cpvc/plain/BALLVALVE.jpeg"
   },
   {
-    title: "Reducer Coupler",
-    desc: "Joins different pipe sizes while maintaining smooth flow.",
-    img: ImgReducerCoupler,
+    "title": "Reducer Coupler",
+    "desc": "Joins different pipe sizes while maintaining smooth flow.",
+    "img": "/Images/products/cpvc/plain/REDUCERCOUPLER.jpeg"
   },
   {
-    title: "Reducer Bush",
-    desc: "Ensures seamless transition between varying pipe diameters.",
-    img: ImgReducerBush,
+    "title": "Reducer Bush",
+    "desc": "Ensures seamless transition between varying pipe diameters.",
+    "img": "/Images/products/cpvc/plain/REDUCERBUSH.jpeg"
   },
   {
-  title: "3 in 1 Wall Mixer",
-  desc: "Special fitting designed for wall mixer installations with multiple outlet connections.",
-  img: Img3In1WallMixer,
-},
-
-{
-  title: "Concealed Valve",
-  desc: "Controls water flow with a concealed installation for a clean and modern finish.",
-  img: ImgConcealedValve,
-},
-{
-  title: "C-PVC Solvent Cement",
-  desc: "High-strength solvent cement for permanent and leak-proof C-PVC pipe joints.",
-  img: ImgCPVCSolvent,
-},
-{
-  title: "Cross Tee",
-  desc: "Four-way fitting used to distribute water flow in multiple directions.",
-  img: ImgCrossTee,
-},
-{
-  title: "End Plug",
-  desc: "Closes internally threaded fittings securely to prevent leakage.",
-  img: ImgEndPlug,
-},
-{
-  title: "Non Return Valve (NRV)",
-  desc: "Prevents reverse water flow, ensuring one-way movement through the pipeline.",
-  img: ImgNRV,
-},
-{
-  title: "Pipe Clamp",
-  desc: "Supports and secures C-PVC pipes firmly to walls and ceilings.",
-  img: ImgPipeClamp,
-},
-{
-  title: "Reducer Elbow",
-  desc: "Combines a 90° bend with pipe size reduction in a single fitting.",
-  img: ImgReducerElbow,
-},
-{
-  title: "Socket Threaded Nipple",
-  desc: "Provides a secure transition between solvent-weld and threaded pipe connections.",
-  img: ImgSocketThreadedNipple,
-},
-{
-  title: "Step Over Bend",
-  desc: "Allows the pipeline to bypass obstacles while maintaining uninterrupted flow.",
-  img: ImgStepOverBend,
-},
+    "title": "3 in 1 Wall Mixer",
+    "desc": "Special fitting designed for wall mixer installations with multiple outlet connections.",
+    "img": "/Images/products/cpvc/plain/3IN1WALLMIXER.png"
+  },
+  {
+    "title": "Concealed Valve",
+    "desc": "Controls water flow with a concealed installation for a clean and modern finish.",
+    "img": "/Images/products/cpvc/plain/CONCEALEDVALVE.png"
+  },
+  {
+    "title": "C-PVC Solvent Cement",
+    "desc": "High-strength solvent cement for permanent and leak-proof C-PVC pipe joints.",
+    "img": "/Images/products/cpvc/plain/CPVCSOLVENT.png"
+  },
+  {
+    "title": "Cross Tee",
+    "desc": "Four-way fitting used to distribute water flow in multiple directions.",
+    "img": "/Images/products/cpvc/plain/CROSSTEE.png"
+  },
+  {
+    "title": "End Plug",
+    "desc": "Closes internally threaded fittings securely to prevent leakage.",
+    "img": "/Images/products/cpvc/plain/ENDPLUG.png"
+  },
+  {
+    "title": "Non Return Valve (NRV)",
+    "desc": "Prevents reverse water flow, ensuring one-way movement through the pipeline.",
+    "img": "/Images/products/cpvc/plain/NRV.png"
+  },
+  {
+    "title": "Pipe Clamp",
+    "desc": "Supports and secures C-PVC pipes firmly to walls and ceilings.",
+    "img": "/Images/products/cpvc/plain/PIPECLAMP.jpeg"
+  },
+  {
+    "title": "Reducer Elbow",
+    "desc": "Combines a 90° bend with pipe size reduction in a single fitting.",
+    "img": "/Images/products/cpvc/plain/REDUCER90ELBOW.png"
+  },
+  {
+    "title": "Socket Threaded Nipple",
+    "desc": "Provides a secure transition between solvent-weld and threaded pipe connections.",
+    "img": "/Images/products/cpvc/plain/SOCKETTANKNIPPLE.png"
+  },
+  {
+    "title": "Step Over Bend",
+    "desc": "Allows the pipeline to bypass obstacles while maintaining uninterrupted flow.",
+    "img": "/Images/products/cpvc/plain/STEPOVERBEND.png"
+  }
 ];
 
 const CPVCPlainFittingCatalog = () => {
