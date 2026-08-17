@@ -10,28 +10,28 @@ import {
 } from "react-icons/hi2";
 
 // Individual product image imports
-import Img90D from "../../../../public/Images/products/cpvc/plain/90d.png";
-import ImgTee from "../../../../public/Images/products/cpvc/plain/Tee.jpeg";
-import ImgMTA from "../../../../public/Images/products/cpvc/plain/MTA.jpeg";
-import ImgFTA from "../../../../public/Images/products/cpvc/plain/FTA.jpeg";
-import ImgCoupler from "../../../../public/Images/products/cpvc/plain/Coupler.jpeg";
-import ImgEndCap from "../../../../public/Images/products/cpvc/plain/EndCap.png";
-import ImgUnion from "../../../../public/Images/products/cpvc/plain/Union.jpeg";
-import Img45D from "../../../../public/Images/products/cpvc/plain/45D.jpeg";
-import ImgReducerTee from "../../../../public/Images/products/cpvc/plain/REDUCERTEE.png";
-import ImgBallValve from "../../../../public/Images/products/cpvc/plain/BALLVALVE.jpeg";
-import ImgReducerCoupler from "../../../../public/Images/products/cpvc/plain/REDUCERCOUPLER.jpeg";
-import ImgReducerBush from "../../../../public/Images/products/cpvc/plain/REDUCERBUSH.jpeg";
-import Img3In1WallMixer from "../../../../public/Images/products/cpvc/plain/3IN1WALLMIXER.png";
-import ImgConcealedValve from "../../../../public/Images/products/cpvc/plain/CONCEALEDVALVE.png";
-import ImgCPVCSolvent from "../../../../public/Images/products/cpvc/plain/CPVCSOLVENT.png";
-import ImgCrossTee from "../../../../public/Images/products/cpvc/plain/CROSSTEE.png";
-import ImgEndPlug from "../../../../public/Images/products/cpvc/plain/ENDPLUG.png";
-import ImgNRV from "../../../../public/Images/products/cpvc/plain/NRV.png";
-import ImgPipeClamp from "../../../../public/Images/products/cpvc/plain/PIPECLAMP.jpeg";
-import ImgReducerElbow from "../../../../public/Images/products/cpvc/plain/REDUCER90ELBOW.png";
-import ImgSocketThreadedNipple from "../../../../public/Images/products/cpvc/plain/SOCKETTANKNIPPLE.png";
-import ImgStepOverBend from "../../../../public/Images/products/cpvc/plain/STEPOVERBEND.png";
+// import Img90D from "../../../../public/Images/products/cpvc/plain/90d.png";
+// import ImgTee from "../../../../public/Images/products/cpvc/plain/Tee.jpeg";
+// import ImgMTA from "../../../../public/Images/products/cpvc/plain/MTA.jpeg";
+// import ImgFTA from "../../../../public/Images/products/cpvc/plain/FTA.jpeg";
+// import ImgCoupler from "../../../../public/Images/products/cpvc/plain/Coupler.jpeg";
+// import ImgEndCap from "../../../../public/Images/products/cpvc/plain/EndCap.png";
+// import ImgUnion from "../../../../public/Images/products/cpvc/plain/Union.jpeg";
+// import Img45D from "../../../../public/Images/products/cpvc/plain/45D.jpeg";
+// import ImgReducerTee from "../../../../public/Images/products/cpvc/plain/REDUCERTEE.png";
+// import ImgBallValve from "../../../../public/Images/products/cpvc/plain/BALLVALVE.jpeg";
+// import ImgReducerCoupler from "../../../../public/Images/products/cpvc/plain/REDUCERCOUPLER.jpeg";
+// import ImgReducerBush from "../../../../public/Images/products/cpvc/plain/REDUCERBUSH.jpeg";
+// import Img3In1WallMixer from "../../../../public/Images/products/cpvc/plain/3IN1WALLMIXER.png";
+// import ImgConcealedValve from "../../../../public/Images/products/cpvc/plain/CONCEALEDVALVE.png";
+// import ImgCPVCSolvent from "../../../../public/Images/products/cpvc/plain/CPVCSOLVENT.png";
+// import ImgCrossTee from "../../../../public/Images/products/cpvc/plain/CROSSTEE.png";
+// import ImgEndPlug from "../../../../public/Images/products/cpvc/plain/ENDPLUG.png";
+// import ImgNRV from "../../../../public/Images/products/cpvc/plain/NRV.png";
+// import ImgPipeClamp from "../../../../public/Images/products/cpvc/plain/PIPECLAMP.jpeg";
+// import ImgReducerElbow from "../../../../public/Images/products/cpvc/plain/REDUCER90ELBOW.png";
+// import ImgSocketThreadedNipple from "../../../../public/Images/products/cpvc/plain/SOCKETTANKNIPPLE.png";
+// import ImgStepOverBend from "../../../../public/Images/products/cpvc/plain/STEPOVERBEND.png";
 
 const products = 
 [
