@@ -1,12 +1,27 @@
-import BlogList from "@/components/blog/bloglist";
-import { blogs } from "@/data/blogs";
+// import BlogList from "@/components/blog/bloglist";
+// import { blogs } from "@/data/blogs";
 
-export const metadata = {
-  title: "Blogs",
-  description:
-    "Read Bhagvat Pipe insights about CPVC pipes, UPVC pipes, SWR systems, pipe installation, plumbing solutions, and buying guides.",
-};
+// export const metadata = {
+//   title: "Blogs",
+//   description:
+//     "Read Bhagvat Pipe insights about CPVC pipes, UPVC pipes, SWR systems, pipe installation, plumbing solutions, and buying guides.",
+// };
 
-export default function BlogPage() {
-  return <BlogList blogs={blogs} />;
+// export default function BlogPage() {
+//   return <BlogList blogs={blogs} />;
+// }
+
+
+import { BlogList } from "@blugin/next";
+
+export default function BlogPage({ searchParams }){
+  return (
+    <>
+    <div className="bg-white text-[#17171a] pt-36">
+    <BlogList searchParams={searchParams} />;
+    </div>
+    </>
+
+    
+  )
 }
