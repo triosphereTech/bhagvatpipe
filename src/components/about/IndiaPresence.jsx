@@ -52,7 +52,7 @@ const highlightedStates = [
 
 const IndiaPresence = () => {
   return (
-    <section className="w-full bg-white px-4 py-14 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white px-4 lg:px-30 py-14 sm:py-16 lg:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Top */}
@@ -65,7 +65,7 @@ const IndiaPresence = () => {
             </p>
           </div>
 
-          <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-center">
+          <h2 className="mt-6 text-[26px] md:text-[34px] lg:text-[44px] leading-tight tracking-tight font-semibold text-black text-left md:text-left">
             Supplying Reliable
             <span className="text-[#8a2967]">
               {" "}Pipeline Solutions
