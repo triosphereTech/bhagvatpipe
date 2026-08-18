@@ -173,11 +173,37 @@ const ProductSection = () => {
             </h3>
           </div>
 
-          <button className="h-12 px-8 rounded-full border border-gray-300 bg-black text-white text-sm sm:text-base font-medium hover:scale-[1.03] transition-all duration-300 w-fit">
-
-            Download Catalogue
-
-          </button>
+          <a
+  href="/Doc/Bhagvat.pdf"
+  download="Bhagvat-Pipes-Catalogue.pdf"
+  className="
+    inline-flex
+    h-12
+    w-fit
+    items-center
+    justify-center
+    gap-2
+    rounded-full
+    border
+    border-[#8a2967]
+    bg-[#8a2967]
+    px-7 sm:px-8
+    text-sm sm:text-base
+    font-medium
+    text-white
+    whitespace-nowrap
+    shadow-sm
+    transition-all
+    duration-300
+    hover:-translate-y-0.5
+    hover:bg-[#722055]
+    hover:border-[#722055]
+    hover:shadow-md
+    active:translate-y-0
+  "
+>
+  Download Catalogue
+</a>
         </div>
       </div>
     </section>

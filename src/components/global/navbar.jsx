@@ -92,8 +92,8 @@ const Navbar = () => {
 
     <span className="opacity-95">
       Call :
-      <a href="tel:+919104876565" className="ml-1 hover:underline">
-        +91 - 9104876565
+      <a href="tel:+919797656597" className="ml-1 hover:underline">
+        +91 - 9797656597
       </a>
     </span>
 
@@ -109,8 +109,8 @@ const Navbar = () => {
 
     <span className="opacity-95">
       Call :
-      <a href="tel:+919104876565" className="ml-1 hover:underline">
-        +91 - 9104876565
+      <a href="tel:+919797656597" className="ml-1 hover:underline">
+        +91 - 9797656597
       </a>
     </span>
 
@@ -131,8 +131,8 @@ const Navbar = () => {
 
       <span className="opacity-95">
         Call :
-        <a href="tel:+919104876565" className="ml-1 hover:underline">
-          +91 - 9104876565
+        <a href="tel:+919797656597" className="ml-1 hover:underline">
+          +91 - 9797656597
         </a>
       </span>
 
@@ -450,9 +450,36 @@ const Navbar = () => {
                   >
                     Contact Us
                   </Link>
-                  <button className="h-14 rounded-xl border border-black/10 bg-white text-black text-sm font-medium">
-                    Download Brochure
-                  </button>
+                 <a
+  href="/Doc/Bhagvat.pdf"
+  download="Bhagvat-Pipes-Brochure.pdf"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    h-14
+    px-8
+    rounded-xl
+    border
+    border-black/10
+    bg-white
+    text-black
+    text-base
+    font-medium
+    whitespace-nowrap
+    shadow-sm
+    transition-all
+    duration-300
+    hover:bg-[#8a2967]
+    hover:border-[#8a2967]
+    hover:text-white
+    hover:-translate-y-0.5
+    hover:shadow-md
+    active:translate-y-0
+  "
+>
+  Download Brochure
+</a>
                 </div>
               </div>
 

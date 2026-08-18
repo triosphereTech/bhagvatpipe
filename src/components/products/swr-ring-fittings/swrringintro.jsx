@@ -2,6 +2,7 @@ import React from "react";
 import { HiOutlineArrowRight } from "react-icons/hi2";
 import Image from 'next/image'
 import HeroImg from "@/../public/Images/products/swr_ring_fit.png"
+import Link from "next/link";
 
 const SwrRingIntro = () => {
   return (
@@ -41,22 +42,26 @@ const SwrRingIntro = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <button className="h-12 px-7 rounded-full bg-[#8a2967] text-white flex items-center gap-2">
+              <Link href="/products" className="h-12 px-7 rounded-full bg-[#8a2967] text-white flex items-center gap-2">
                 Explore Products
 
                 <HiOutlineArrowRight className="text-lg" />
-              </button>
+              </Link>
 
-              <button className="h-12 px-7 rounded-full border border-black/10">
+              <a 
+                href="/Doc/Bhagvat.pdf"
+                download="Bhagvat-Pipes-Catalogue.pdf"
+                className="h-12 px-7 rounded-full border border-black/10"
+              >
                 Download Catalogue
-              </button>
+              </a>
             </div>
 
             {/* Stats */}
             <div className="mt-10 grid grid-cols-3 gap-4 max-w-xl">
               <div className="rounded-2xl border border-black/10 p-4">
                 <h3 className="text-2xl font-semibold text-black">
-                  12+
+                  70+
                 </h3>
 
                 <p className="text-sm text-black/50 mt-1">

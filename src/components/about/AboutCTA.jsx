@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import {
@@ -68,22 +69,22 @@ const AboutCTA = () => {
             <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
 
               {/* Contact Button */}
-              <button className="h-12 px-6 rounded-full bg-[#8a2967] text-white text-base font-medium flex items-center gap-2 hover:scale-[1.02] transition-all duration-300">
+              <Link href="/contact" className="h-12 px-6 rounded-full bg-[#8a2967] text-white text-base font-medium flex items-center gap-2 hover:scale-[1.02] transition-all duration-300">
 
                 Contact Us
 
                 <HiArrowRight className="text-md" />
 
-              </button>
+              </Link>
 
               {/* Brochure Button */}
-              <button className="h-12 px-6 rounded-full border border-black/10 bg-white text-black text-base font-medium flex items-center gap-2 hover:bg-black hover:text-white transition-all duration-300">
+              <a href="/Doc/Bhagvat.pdf" download="Bhagvat-Pipes-Brochure.pdf" className="h-12 px-6 rounded-full border border-black/10 bg-white text-black text-base font-medium flex items-center gap-2 hover:bg-black hover:text-white transition-all duration-300">
 
                 Download Brochure
 
                 <HiOutlineArrowDownTray className="text-md" />
 
-              </button>
+              </a>
             </div>
           </div>
         </div>

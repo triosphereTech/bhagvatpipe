@@ -68,7 +68,7 @@ const ProductHero = () => {
 
                 <h3 className="text-3xl font-semibold text-black">
 
-                  20+
+                  70+
 
                 </h3>
 
@@ -98,13 +98,13 @@ const ProductHero = () => {
 
                 <h3 className="text-3xl font-semibold text-black">
 
-                  PAN India
+                  200+
 
                 </h3>
 
                 <p className="mt-2 text-black/50">
 
-                  Supply Network
+                  Trusted Projects
 
                 </p>
               </div>

@@ -55,11 +55,11 @@ const Footer = () => {
             {/* CTA */}
             <button className="group mt-8 h-14 px-6 rounded-full bg-white text-[#8a2967] flex items-center gap-4 hover:scale-[1.02] transition-all duration-300">
 
-              <span className="text-sm sm:text-base font-medium tracking-wide">
+              <a href="/Doc/Bhagvat.pdf" download="Bhagvat-Pipes-Catalogue.pdf" className="text-sm sm:text-base font-medium tracking-wide">
 
                 Download Catalogue
 
-              </span>
+              </a>
 
               <div className="w-10 h-10 rounded-full bg-[#8a29660e] flex items-center justify-center group-hover:rotate-45 transition-all duration-300">
 
@@ -160,7 +160,7 @@ const Footer = () => {
 
                     <h4 className="text-base sm:text-lg font-medium text-white">
 
-                      +91 98765 43210
+                      +91 9797656597
 
                     </h4>
                   </div>

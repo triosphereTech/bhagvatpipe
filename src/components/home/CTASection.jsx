@@ -3,6 +3,7 @@ import {
   HiOutlineArrowUpRight,
   HiOutlinePhone,
 } from "react-icons/hi2";
+import Link from "next/link";
 
 const CTASection = () => {
   return (
@@ -108,11 +109,11 @@ const CTASection = () => {
                 {/* Main Button */}
                 <button className="group h-14 px-7 rounded-full bg-[#8a2967] text-white flex items-center justify-between hover:scale-[1.02] transition-all duration-300">
 
-                  <span className="text-sm sm:text-base font-medium tracking-wide">
+                  <Link href="/contact" className="text-sm sm:text-base font-medium tracking-wide">
 
                     Become Distributor
 
-                  </span>
+                  </Link>
 
                   <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:rotate-45 transition-all duration-300">
 
@@ -124,11 +125,11 @@ const CTASection = () => {
                 {/* Secondary */}
                 <button className="group h-14 px-7 rounded-full border border-[#8a2967]/10 bg-[#8a29660e] text-[#8a2967] flex items-center justify-between hover:bg-[#8a2967] hover:text-white transition-all duration-300">
 
-                  <span className="text-sm sm:text-base font-medium tracking-wide">
+                  <a href="/Doc/Bhagvat.pdf" download="Bhagvat-Pipes-Brochure.pdf" className="text-sm sm:text-base font-medium tracking-wide">
 
                     Download Catalogue
 
-                  </span>
+                  </a>
 
                   <div className="w-8 h-8 rounded-full border border-current/20 flex items-center justify-center">
 
@@ -158,7 +159,7 @@ const CTASection = () => {
 
                     <h4 className="text-lg font-semibold text-black">
 
-                      +91 98765 43210
+                      +91 9797656597
 
                     </h4>
                   </div>

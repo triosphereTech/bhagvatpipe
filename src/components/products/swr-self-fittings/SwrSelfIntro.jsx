@@ -2,6 +2,7 @@ import React from 'react'
 import { HiOutlineArrowRight } from "react-icons/hi2";
 import Image from 'next/image'
 import HeroImg from "@/../public/Images/products/swr_self_fit.png"
+import Link from 'next/link';
 
 const SwrSelfIntro = () => {
 return (
@@ -41,14 +42,18 @@ return (
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <button className="h-12 px-7 rounded-full bg-[#8a2967] text-white flex items-center gap-2">
+              <Link href="/products" className="h-12 px-7 rounded-full bg-[#8a2967] text-white flex items-center gap-2">
                 Explore Products
                 <HiOutlineArrowRight className="text-lg" />
-              </button>
+              </Link>
 
-              <button className="h-12 px-7 rounded-full border border-black/10">
+              <a 
+                href="/Doc/Bhagvat.pdf"
+                download="Bhagvat-Pipes-Catalogue.pdf"
+                className="h-12 px-7 rounded-full border border-black/10"
+              >
                 Download Catalogue
-              </button>
+              </a>
             </div>
 
             {/* Stats */}

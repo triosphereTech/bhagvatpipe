@@ -78,7 +78,7 @@ const Hero = () => {
 
                 <div>
                   <h3 className="text-3xl font-bold text-black">
-                    15+
+                    70+
                   </h3>
 
                   <p className="text-sm text-black/50 mt-1">
@@ -88,7 +88,7 @@ const Hero = () => {
 
                 <div>
                   <h3 className="text-3xl font-bold text-black">
-                    1000+
+                    200+
                   </h3>
 
                   <p className="text-sm text-black/50 mt-1">

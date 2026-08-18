@@ -2,20 +2,22 @@ import React from "react";
 import Image from "next/image";
 
 import FactoryImg from "../../../public/Images/home/factory.webp";
+// import Broucher from "../../../public/Doc/Bhagvat.pdf";
+import Link from "next/link";
 
 const features = [
   {
-    number: "12+",
+    number: "70+",
     title: "Years Experience",
     desc: "Trusted manufacturing expertise in CPVC, UPVC, and SWR piping systems.",
   },
   {
-    number: "ISO",
+    number: "ISI Certified",
     title: "Certified Quality",
     desc: "ISO 9001:2015 and ISI certified manufacturing standards.",
   },
   {
-    number: "PAN",
+    number: "PAN India and Export",
     title: "India Network",
     desc: "Serving dealers, distributors, and infrastructure projects across India.",
   },
@@ -216,20 +218,61 @@ const WhyBhagvat = () => {
           </div>
 
           {/* Right */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+  {/* Explore Products */}
+  <Link
+    href="/products"
+    className="
+      inline-flex
+      items-center
+      justify-center
+      h-14
+      px-7 sm:px-8
+      rounded-xl
+      bg-black
+      text-white
+      text-sm sm:text-base
+      font-medium
+      whitespace-nowrap
+      transition-all
+      duration-300
+      hover:bg-[#8a2967]
+      hover:-translate-y-0.5
+      active:translate-y-0
+    "
+  >
+    Explore Products
+  </Link>
 
-            <button className="h-14 px-8 rounded-xl bg-black text-white text-sm sm:text-base font-medium hover:scale-[1.03] transition-all duration-300">
-
-              Explore Products
-
-            </button>
-
-            <button className="h-14 px-8 rounded-xl border border-black/10 bg-[#EEF2FB] text-black text-sm sm:text-base font-medium hover:bg-black hover:text-white transition-all duration-300">
-
-              Download Brochure
-
-            </button>
-          </div>
+  {/* Download Brochure */}
+  <a
+    href="/Doc/Bhagvat.pdf"
+    download="Bhagvat-Pipes-Brochure.pdf"
+    className="
+      inline-flex
+      items-center
+      justify-center
+      h-14
+      px-7 sm:px-8
+      rounded-xl
+      border
+      border-black/10
+      bg-[#EEF2FB]
+      text-black
+      text-sm sm:text-base
+      font-medium
+      whitespace-nowrap
+      transition-all
+      duration-300
+      hover:bg-black
+      hover:text-white
+      hover:-translate-y-0.5
+      active:translate-y-0
+    "
+  >
+    Download Brochure
+  </a>
+</div>
         </div>
       </div>
     </section>

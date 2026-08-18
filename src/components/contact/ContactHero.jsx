@@ -10,7 +10,7 @@ const contactInfo = [
   {
     icon: <HiOutlinePhone />,
     title: "Phone",
-    value: "+91 98765 43210",
+    value: "+91 9797656597",
   },
   {
     icon: <HiOutlineEnvelope />,
