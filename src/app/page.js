@@ -5,6 +5,7 @@ import Hero from "@/components/home/hero";
 import ProductSection from "@/components/home/ProductSection";
 import TechnicalSection from "@/components/home/TechnicalSection";
 import WhyBhagvat from "@/components/home/WhyBhagvat";
+import CPVCSEOSection from "@/components/home/CPVCSEOSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <ProductSection/>
     <WhyBhagvat/>
     <ApplicationsSection/>
+    <CPVCSEOSection/>
     <TechnicalSection/>
     <FAQSection/>
     <CTASection/>
