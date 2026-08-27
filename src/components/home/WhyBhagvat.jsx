@@ -2,19 +2,20 @@ import React from "react";
 import Image from "next/image";
 
 import FactoryImg from "../../../public/Images/home/factory.webp";
+import Pipes from "../../../public/Images/home/Pipes.png";
 // import Broucher from "../../../public/Doc/Bhagvat.pdf";
 import Link from "next/link";
 
 const features = [
   {
-    number: "70+",
+    number: "15+",
     title: "Years Experience",
     desc: "Trusted manufacturing expertise in CPVC, UPVC, and SWR piping systems.",
   },
   {
     number: "ISI Certified",
     title: "Certified Quality",
-    desc: "ISO 9001:2015 and ISI certified manufacturing standards.",
+    desc: "ISI 9001:2015 and ISI certified manufacturing standards.",
   },
   {
     number: "PAN India and Export",
@@ -24,7 +25,7 @@ const features = [
   {
     number: "SCH",
     title: "Industrial Standards",
-    desc: "Engineered with SDR 11, SDR 13.5, SCH 40 & SCH 80 specifications.",
+    desc: "Engineered with SDR 11, SDR 13.5, DR 9, SDR7, SCH 40 & SCH 80 specifications.",
   },
 ];
 
@@ -116,22 +117,51 @@ const WhyBhagvat = () => {
               </div>
 
               {/* Image Area */}
-              <div className="relative flex-1 flex items-end justify-center px-6">
+             {/* LEFT IMAGE PANEL */}
+<div className="relative bg-white rounded-2xl overflow-hidden min-h-[700px] lg:min-h-[760px] border border-black/5">
 
-                {/* White Circle */}
-                <div className="absolute bottom-[-120px] w-[500px] h-[500px] bg-[#EEF2FB] rounded-full"></div>
+  {/* Glow */}
+  <div className="absolute -top-20 -right-20 w-[300px] h-[300px] bg-[#ebf1fd] rounded-xl blur-3xl opacity-70"></div>
 
-                {/* Image */}
-                <div className="relative z-10 w-full max-w-[650px] h-[420px] sm:h-[480px]">
+  {/* Content */}
+  <div className="relative z-10 flex flex-col h-full">
 
-                  <Image
-                    src={FactoryImg}
-                    alt="Bhagvat Manufacturing"
-                    fill
-                    className="object-contain object-bottom"
-                  />
-                </div>
-              </div>
+    {/* Top Content */}
+    <div className="px-5 py-8 lg:px-10 lg:py-10">
+
+     
+
+    </div>
+
+    {/* IMAGE AREA */}
+    <div className="relative flex-1 flex flex-col items-center justify-center px-6">
+
+      
+
+      {/* Factory Image */}
+      <div className="relative z-10 w-full rounded-xl max-w-[650px] h-[250px] sm:h-[280px]">
+        <Image
+          src={FactoryImg}
+          alt="Bhagvat Manufacturing Factory"
+          fill
+          className="object-contain object-center"
+        />
+      </div>
+
+      {/* Pipes Image */}
+      <div className="relative mt-20 z-10 w-full max-w-[650px] h-[250px] sm:h-[280px] -mt-10">
+        <Image
+          src={Pipes}
+          alt="Bhagvat Pipes"
+          fill
+          className="object-contain object-top"
+        />
+      </div>
+
+    </div>
+
+  </div>
+</div>
             </div>
           </div>
 

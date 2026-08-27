@@ -61,7 +61,7 @@ const SwrRingIntro = () => {
             <div className="mt-10 grid grid-cols-3 gap-4 max-w-xl">
               <div className="rounded-2xl border border-black/10 p-4">
                 <h3 className="text-2xl font-semibold text-black">
-                  70+
+                  15+
                 </h3>
 
                 <p className="text-sm text-black/50 mt-1">

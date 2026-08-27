@@ -2,7 +2,7 @@ import React from "react";
 
 const standards = [
   {
-    title: "ISO 9001:2015",
+    title: "ISI 9001:2015",
     desc: "Certified manufacturing standards focused on quality, consistency, and industrial reliability.",
   },
   {
@@ -10,7 +10,7 @@ const standards = [
     desc: "Products engineered to meet recognized infrastructure and piping quality benchmarks.",
   },
   {
-    title: "SDR 11 / SDR 13.5",
+    title: "SDR 11 / SDR 13.5, DR 9, SDR7",
     desc: "Pressure-rated piping systems designed for long-term durability and stable performance.",
   },
   {

@@ -25,6 +25,8 @@ import ImgReducerTee from "../../../../public/Images/products/upvc/selffit/REDUC
 import ImgShoeBend from "../../../../public/Images/products/upvc/selffit/SHOEBEND.png";
 import ImgSingleTee from "../../../../public/Images/products/upvc/selffit/SINGLETEE.png";
 import ImgSingleY from "../../../../public/Images/products/upvc/selffit/SINGLEY.png";
+import ImgDoorCap from "../../../../public/Images/products/upvc/ringfit/DOORCAP.png";
+import ImgVentCowl from "../../../../public/Images/products/upvc/ringfit/VENTCOWL.png";
 
 const products = [
   {
@@ -46,6 +48,16 @@ const products = [
     title: "Door Bend",
     desc: "Provides directional change with an inspection door for easy cleaning and maintenance.",
     img: ImgDoorBend,
+  },
+    {
+    title: "Door Cap",
+    desc: "Seals inspection openings securely while allowing convenient future access.",
+    img: ImgDoorCap,
+  },
+  {
+    title: "Vent Cowl",
+    desc: "Protects vent pipes from rainwater, birds, and debris while allowing proper ventilation.",
+    img: ImgVentCowl,
   },
   {
     title: "Door Single Tee",

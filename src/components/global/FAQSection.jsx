@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Do Bhagvat Pipes meet industry standards?",
     answer:
-      "Bhagvat Pipes are manufactured with quality-focused standards including ISO-certified systems and industrial piping specifications such as SDR and SCH standards.",
+      "Bhagvat Pipes are manufactured with quality-focused standards including ISI-certified systems and industrial piping specifications such as SDR and SCH standards.",
   },
   {
     question: "Where are Bhagvat Pipes manufactured?",

@@ -2,21 +2,22 @@ import React from "react";
 
 const stats = [
   {
-    value: "70+",
+    value: "15+",
     label: "Years Experience",
   },
   {
-    value: "ISO",
+    value: "ISI",
     label: "Certified Standards",
   },
   {
     value: "PAN India",
     label: "Supply Network",
   },
-  {
-    value: "CPVC • UPVC • SWR",
-    label: "Industrial Solutions",
-  },
+{
+  value: "TOP 15",
+  label: "From 2023",
+}
+
 ];
 
 const AboutStory = () => {

@@ -16,7 +16,7 @@ import {
 const specs = [
   {
     icon: <HiOutlineFire />,
-    value: "82°C",
+    value: "85°C",
     title: "Heat Resistance",
     desc: "Designed to withstand high-temperature water flow for residential and industrial systems.",
   },

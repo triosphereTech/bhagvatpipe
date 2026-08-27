@@ -59,7 +59,7 @@ const AboutHero = () => {
 
                 <p className="text-sm font-medium text-black">
 
-                  ISO Certified Manufacturing
+                  ISI Certified Manufacturing
 
                 </p>
               </div>
@@ -113,7 +113,7 @@ const AboutHero = () => {
 
               <h3 className="mt-1 text-xl font-semibold text-black">
 
-                70+ Years Experience
+                15+ Years Experience
 
               </h3>
             </div>

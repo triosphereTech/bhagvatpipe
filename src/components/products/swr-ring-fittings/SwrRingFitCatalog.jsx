@@ -13,7 +13,6 @@ import {
 import ImgBend875 from "../../../../public/Images/products/upvc/ringfit/BEND875.png";
 import ImgCoupler from "../../../../public/Images/products/upvc/ringfit/COUPLER.png";
 import ImgDoorBend875 from "../../../../public/Images/products/upvc/ringfit/DOORBEND875.png";
-import ImgDoorCap from "../../../../public/Images/products/upvc/ringfit/DOORCAP.png";
 import ImgDoorSingleTee from "../../../../public/Images/products/upvc/ringfit/DOORSINGLETEE.png";
 import ImgDoorSingleY from "../../../../public/Images/products/upvc/ringfit/DOORSINGLEY.png";
 import ImgDoubleTee4Way from "../../../../public/Images/products/upvc/ringfit/DOUBLETEE4WAY.png";
@@ -23,7 +22,6 @@ import ImgReducerTee from "../../../../public/Images/products/upvc/ringfit/REDUC
 import ImgShoeBend45 from "../../../../public/Images/products/upvc/ringfit/SHOEBEND45.png";
 import ImgSingleTee from "../../../../public/Images/products/upvc/ringfit/SINGLETEE.png";
 import ImgSingleY from "../../../../public/Images/products/upvc/ringfit/SINGLEY.png";
-import ImgVentCowl from "../../../../public/Images/products/upvc/ringfit/VENTCOWL.png";
 
 const products = [
   {
@@ -40,11 +38,6 @@ const products = [
     title: "87.5° Door Bend",
     desc: "Provides directional change with an inspection door for easy maintenance and cleaning.",
     img: ImgDoorBend875,
-  },
-  {
-    title: "Door Cap",
-    desc: "Seals inspection openings securely while allowing convenient future access.",
-    img: ImgDoorCap,
   },
   {
     title: "Door Single Tee",
@@ -90,11 +83,6 @@ const products = [
     title: "Single Y",
     desc: "Y-shaped fitting that provides efficient branch connections with minimal flow resistance.",
     img: ImgSingleY,
-  },
-  {
-    title: "Vent Cowl",
-    desc: "Protects vent pipes from rainwater, birds, and debris while allowing proper ventilation.",
-    img: ImgVentCowl,
   },
 ];
 

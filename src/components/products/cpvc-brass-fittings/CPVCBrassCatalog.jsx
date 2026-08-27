@@ -35,6 +35,26 @@ const products = [
     desc: "Female threaded adapter for secure pipe-to-threaded fitting connections.",
     img: ImgBrassFTA,
   },
+   {
+    "title": "Reducer Coupler",
+    "desc": "Joins different pipe sizes while maintaining smooth flow.",
+    "img": "/Images/products/cpvc/plain/REDUCERCOUPLER.jpeg"
+  },
+  {
+    "title": "Reducer Bush",
+    "desc": "Ensures seamless transition between varying pipe diameters.",
+    "img": "/Images/products/cpvc/plain/REDUCERBUSH.jpeg"
+  },
+  {
+    "title": "3 in 1 Wall Mixer",
+    "desc": "Special fitting designed for wall mixer installations with multiple outlet connections.",
+    "img": "/Images/products/cpvc/plain/3IN1WALLMIXER.png"
+  },
+  {
+    "title": "Concealed Valve",
+    "desc": "Controls water flow with a concealed installation for a clean and modern finish.",
+    "img": "/Images/products/cpvc/plain/CONCEALEDVALVE.png"
+  },
   // {
   //   title: "C-PVC Concealed Valve",
   //   desc: "Premium concealed valve solution for modern plumbing infrastructure systems.",

@@ -221,7 +221,7 @@ const Footer = () => {
         {/* <div className="mt-12 pt-8 border-t border-white/10 flex flex-wrap gap-4">
 
           {[
-            "ISO Certified",
+            "ISI Certified",
             "ISI Standards",
             "CPVC Systems",
             "UPVC Solutions",

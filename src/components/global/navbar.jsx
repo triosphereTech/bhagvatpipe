@@ -47,6 +47,7 @@ const Navbar = () => {
         
         { name: "C-PVC Plain Fittings", path: "/products/cpvc-plain-fittings", desc: "Solvent-weld joints & connectors" },
         { name: "C-PVC Brass Fittings", path: "/products/cpvc-brass-fittings", desc: "Metal-threaded transition pieces" },
+        { name: "C-PVC Plumbing Pipes", path: "/products/cpvc-plumbing-pipe", desc: "SDR 11 and SDR 13.5" },
       ],
     },
     {
@@ -83,8 +84,8 @@ const Navbar = () => {
 
     <span className="opacity-95">
       Get Instant Online quotation on WhatsApp :
-      <a href="https://wa.me/919797971181" className="ml-1 hover:underline">
-        +91 - 9797971181
+      <a href="https://wa.me/919797656597" className="ml-1 hover:underline">
+        +91 - 9797656597
       </a>
     </span>
 
@@ -92,16 +93,16 @@ const Navbar = () => {
 
     <span className="opacity-95">
       Call :
-      <a href="tel:+919797656597" className="ml-1 hover:underline">
-        +91 - 9797656597
+      <a href="tel:+919797971181" className="ml-1 hover:underline">
+        +91 - 9797971181
       </a>
     </span>
 
     {/* Duplicate for seamless loop */}
     <span className="opacity-95">
       Get Instant Online quotation on WhatsApp :
-      <a href="https://wa.me/919797971181" className="ml-1 hover:underline">
-        +91 - 9797971181
+      <a href="https://wa.me/919797656597" className="ml-1 hover:underline">
+        +91 - 9797656597
       </a>
     </span>
 
@@ -109,8 +110,8 @@ const Navbar = () => {
 
     <span className="opacity-95">
       Call :
-      <a href="tel:+919797656597" className="ml-1 hover:underline">
-        +91 - 9797656597
+      <a href="tel:+919797971181" className="ml-1 hover:underline">
+        +91 - 9797971181
       </a>
     </span>
 
@@ -122,8 +123,8 @@ const Navbar = () => {
 
       <span className="opacity-95">
         Get Instant Online quotation on WhatsApp :
-        <a href="https://wa.me/919797971181" className="ml-1 hover:underline">
-          +91 - 9797971181
+        <a href="https://wa.me/919797656597" className="ml-1 hover:underline">
+          +91 - 9797656597
         </a>
       </span>
 
@@ -131,8 +132,8 @@ const Navbar = () => {
 
       <span className="opacity-95">
         Call :
-        <a href="tel:+919797656597" className="ml-1 hover:underline">
-          +91 - 9797656597
+        <a href="tel:+919797971181" className="ml-1 hover:underline">
+          +91 - 9797971181
         </a>
       </span>
 

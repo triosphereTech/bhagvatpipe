@@ -68,7 +68,7 @@ const ProductHero = () => {
 
                 <h3 className="text-3xl font-semibold text-black">
 
-                  70+
+                  15+
 
                 </h3>
 
@@ -83,7 +83,7 @@ const ProductHero = () => {
 
                 <h3 className="text-3xl font-semibold text-black">
 
-                  ISO
+                  ISI
 
                 </h3>
 

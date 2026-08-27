@@ -96,14 +96,14 @@ export const services = [
     ],
   },
   {
-    slug: "tmj-jaw-disorders",
+    slug: "tmj-jaw-dISIrders",
     icon: "AdjustmentsHorizontal",
-    title: "TMJ & Jaw Disorders",
+    title: "TMJ & Jaw DISIrders",
     description:
       "Diagnosis and management of jaw joint pain, clicking, and restricted movement for lasting relief.",
     treatments: [
       "TMJ Pain Management",
-      "Jaw Joint Disorders",
+      "Jaw Joint DISIrders",
       "Limited Mouth Opening Treatment",
     ],
   },
