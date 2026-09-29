@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
 import {
   HiOutlineArrowLeft,
   HiOutlineArrowRight,
@@ -11,7 +14,8 @@ const renderBlock = (block, index) => {
     return (
       <h2
         key={index}
-        className="mt-14 text-[26px] font-semibold leading-tight text-[#20181d] sm:text-[31px]"
+        id={`blog-section-${index}`}
+        className="scroll-mt-28 mt-14 text-[26px] font-semibold leading-tight text-[#20181d] sm:text-[31px]"
       >
         {block.text}
       </h2>
@@ -22,7 +26,8 @@ const renderBlock = (block, index) => {
     return (
       <h3
         key={index}
-        className="mt-10 text-[21px] font-semibold leading-snug text-[#20181d] sm:text-[24px]"
+        id={`blog-section-${index}`}
+        className="scroll-mt-28 mt-10 text-[21px] font-semibold leading-snug text-[#20181d] sm:text-[24px]"
       >
         {block.text}
       </h3>
@@ -148,11 +153,50 @@ const renderBlock = (block, index) => {
 };
 
 const BlogDetail = ({ blog, previousBlog, nextBlog }) => {
+  const sections = useMemo(
+    () =>
+      blog.content
+        .map((block, index) => ({ ...block, index }))
+        .filter((block) => block.type === "h2" || block.type === "h3"),
+    [blog.content],
+  );
+  const [activeSection, setActiveSection] = useState(sections[0]?.index ?? null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSections = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visibleSections[0]) {
+          setActiveSection(Number(visibleSections[0].target.id.replace("blog-section-", "")));
+        }
+      },
+      { rootMargin: "-120px 0px -65% 0px", threshold: 0 },
+    );
+
+    sections.forEach((section) => {
+      const element = document.getElementById(`blog-section-${section.index}`);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, [sections]);
+
+  const scrollToSection = (index) => {
+    setActiveSection(index);
+    document.getElementById(`blog-section-${index}`)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
-    <main className="bg-[#fbfaf8] text-[#20181d]">
-      <article className="px-4 pt-36 sm:pt-40 lg:pt-44">
+    <main className="overflow-x-clip bg-[#fbfaf8] text-[#20181d]">
+      <article className="px-3 pt-32 sm:px-4 sm:pt-40 lg:pt-44">
         <div className="mx-auto max-w-6xl">
-          <div className="relative aspect-[16/8.6] min-h-[260px] overflow-hidden rounded-[22px] bg-[#8a29660e] shadow-[0_24px_90px_rgba(32,24,29,0.10)]">
+          <div className="relative aspect-[4/3] min-h-[180px] overflow-hidden rounded-[16px] bg-[#8a29660e] shadow-[0_24px_90px_rgba(32,24,29,0.10)] sm:aspect-[16/8.6] sm:min-h-[260px] sm:rounded-[22px]">
             <Image
               src={blog.heroImage || blog.image}
               alt={blog.title}
@@ -164,7 +208,9 @@ const BlogDetail = ({ blog, previousBlog, nextBlog }) => {
           </div>
         </div>
 
-        <header className="mx-auto max-w-[880px] pt-12 sm:pt-14">
+        <div className="mx-auto grid max-w-6xl gap-8 pb-16 pt-8 sm:gap-10 sm:pb-20 sm:pt-12 lg:grid-cols-[minmax(0,880px)_240px] lg:items-start sm:pt-14">
+        <div className="min-w-0">
+        <header>
           <div className="flex flex-wrap items-center gap-3">
             <span className="rounded-full border border-[#8a2967]/20 bg-[#8a2967]/10 px-3.5 py-1.5 text-xs font-semibold text-[#8a2967]">
               {blog.category}
@@ -176,7 +222,7 @@ const BlogDetail = ({ blog, previousBlog, nextBlog }) => {
             </span>
           </div>
 
-          <h1 className="mt-6 text-[34px] font-semibold leading-[1.14] text-[#20181d] sm:text-[44px] lg:text-[52px]">
+          <h1 className="mt-5 break-words text-[30px] font-semibold leading-[1.14] text-[#20181d] sm:mt-6 sm:text-[44px] lg:text-[52px]">
             {blog.title}
           </h1>
 
@@ -186,8 +232,37 @@ const BlogDetail = ({ blog, previousBlog, nextBlog }) => {
           </div>
         </header>
 
-        <div className="mx-auto max-w-[880px] pb-20 pt-2 sm:pb-24">
+        <div className="min-w-0 pt-2 sm:pb-4">
           {blog.content.map(renderBlock)}
+        </div>
+        </div>
+
+        {sections.length > 0 ? (
+          <aside
+            className="order-first min-w-0 lg:order-none lg:sticky lg:top-28 lg:z-10 lg:h-fit lg:self-start"
+            aria-label="Blog details index"
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8a2967]">
+              Blog Index
+            </p>
+            <nav className="mt-4 max-h-64 overflow-y-auto overscroll-contain border-l border-black/10 pr-2 sm:max-h-72 lg:max-h-none lg:overflow-visible lg:pr-0">
+              {sections.map((section) => (
+                <button
+                  key={section.index}
+                  type="button"
+                  onClick={() => scrollToSection(section.index)}
+                  className={`block w-full border-l-2 px-4 py-2 text-left text-sm leading-6 transition-colors ${
+                    activeSection === section.index
+                      ? "-ml-px border-[#8a2967] font-semibold text-[#8a2967]"
+                      : "border-transparent text-black/50 hover:text-[#8a2967]"
+                  }`}
+                >
+                  {section.text}
+                </button>
+              ))}
+            </nav>
+          </aside>
+        ) : null}
         </div>
       </article>
 
