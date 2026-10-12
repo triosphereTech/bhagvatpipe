@@ -15,7 +15,7 @@ import {
 // import ImgMTA from "../../../../public/Images/products/cpvc/plain/MTA.jpeg";
 // import ImgFTA from "../../../../public/Images/products/cpvc/plain/FTA.jpeg";
 // import ImgCoupler from "../../../../public/Images/products/cpvc/plain/Coupler.jpeg";
-// import ImgEndCap from "../../../../public/Images/products/cpvc/plain/EndCap.png";
+// import ImgEndCap from "../../../../public/Images/products/cpvc/plain/EndCap.jpeg";
 // import ImgUnion from "../../../../public/Images/products/cpvc/plain/Union.jpeg";
 // import Img45D from "../../../../public/Images/products/cpvc/plain/45D.jpeg";
 // import ImgReducerTee from "../../../../public/Images/products/cpvc/plain/REDUCERTEE.png";
@@ -63,7 +63,7 @@ const products =
   {
     "title": "End Cap",
     "desc": "Seals the pipe end securely to prevent water leakage.",
-    "img": "/Images/products/cpvc/plain/EndCap.png"
+    "img": "/Images/products/cpvc/plain/EndCap.jpeg"
   },
   {
     "title": "Union",
@@ -94,6 +94,16 @@ const products =
     "title": "Cross Tee",
     "desc": "Four-way fitting used to distribute water flow in multiple directions.",
     "img": "/Images/products/cpvc/plain/CROSSTEE.png"
+  },
+     {
+    "title": "Reducer Coupler",
+    "desc": "Joins different pipe sizes while maintaining smooth flow.",
+    "img": "/Images/products/cpvc/plain/REDUCERCOUPLER.jpeg"
+  },
+  {
+    "title": "Reducer Bush",
+    "desc": "Ensures seamless transition between varying pipe diameters.",
+    "img": "/Images/products/cpvc/plain/REDUCERBUSH.jpeg"
   },
   {
     "title": "End Plug",

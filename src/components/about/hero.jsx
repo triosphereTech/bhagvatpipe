@@ -113,7 +113,7 @@ const AboutHero = () => {
 
               <h3 className="mt-1 text-xl font-semibold text-black">
 
-                15+ Years Experience
+                13+ Years Experience
 
               </h3>
             </div>

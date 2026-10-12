@@ -17,7 +17,7 @@ import ImgDoorBend from "../../../../public/Images/products/upvc/selffit/DOORBEN
 import ImgDoorSingleTee from "../../../../public/Images/products/upvc/selffit/DOORSINGLETEE.png";
 import ImgDoorSingleY from "../../../../public/Images/products/upvc/selffit/DOORSINGLEY.png";
 import ImgDoubleTee4Way from "../../../../public/Images/products/upvc/selffit/DOUBLETEE4WAY.png";
-import ImgEndCap from "../../../../public/Images/products/upvc/selffit/ENDCAP.png";
+import ImgEndCap from "../../../../public/Images/products/upvc/selffit/EndCap.jpeg";
 import ImgNaniTrap from "../../../../public/Images/products/upvc/selffit/NANITRAP.png";
 import ImgPTrap from "../../../../public/Images/products/upvc/selffit/PTRAP.png";
 import ImgReducer from "../../../../public/Images/products/upvc/selffit/REDUCER.png";

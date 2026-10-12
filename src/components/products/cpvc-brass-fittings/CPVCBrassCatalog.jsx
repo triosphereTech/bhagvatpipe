@@ -35,16 +35,6 @@ const products = [
     desc: "Female threaded adapter for secure pipe-to-threaded fitting connections.",
     img: ImgBrassFTA,
   },
-   {
-    "title": "Reducer Coupler",
-    "desc": "Joins different pipe sizes while maintaining smooth flow.",
-    "img": "/Images/products/cpvc/plain/REDUCERCOUPLER.jpeg"
-  },
-  {
-    "title": "Reducer Bush",
-    "desc": "Ensures seamless transition between varying pipe diameters.",
-    "img": "/Images/products/cpvc/plain/REDUCERBUSH.jpeg"
-  },
   {
     "title": "3 in 1 Wall Mixer",
     "desc": "Special fitting designed for wall mixer installations with multiple outlet connections.",

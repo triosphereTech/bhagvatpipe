@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
 
-import FactoryImg from "../../../public/Images/home/factory.webp";
+import FactoryImg from "../../../public/Images/home/factory.png";
 import Pipes from "../../../public/Images/home/Pipes.png";
 // import Broucher from "../../../public/Doc/Bhagvat.pdf";
 import Link from "next/link";
 
 const features = [
   {
-    number: "15+",
+    number: "13+",
     title: "Years Experience",
     desc: "Trusted manufacturing expertise in CPVC, UPVC, and SWR piping systems.",
   },
   {
     number: "ISI Certified",
     title: "Certified Quality",
-    desc: "ISI 9001:2015 and ISI certified manufacturing standards.",
+    desc: "IS 15778 ISI certified manufacturing standard",
   },
   {
     number: "PAN India and Export",
@@ -25,7 +25,7 @@ const features = [
   {
     number: "SCH",
     title: "Industrial Standards",
-    desc: "Engineered with SDR 11, SDR 13.5, DR 9, SDR7, SCH 40 & SCH 80 specifications.",
+    desc: "Engineered with SDR 11, SDR 13.5, SDR 9, SDR7, SCH 40 & SCH 80 specifications.",
   },
 ];
 
