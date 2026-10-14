@@ -24,13 +24,13 @@ const variants = [
   },
 
   {
-    title: "C-PVC SDR 13.5, SDR 9, SDR7 Pipe",
+    title: "C-PVC SDR 13.5, SDR 9, SDR 7 Pipe",
     image: SDR135Img,
     desc: "Reliable plumbing infrastructure solution designed for corrosion resistance, smooth water flow, and dependable long service life.",
     tags: [
       "Corrosion Resistant",
       "Leak Resistant",
-      "SDR 13.5, SDR 9, SDR7",
+      "SDR 13.5, SDR 9, SDR 7",
       "Long Service Life",
     ],
     application: "Water Distribution • Infrastructure Projects",

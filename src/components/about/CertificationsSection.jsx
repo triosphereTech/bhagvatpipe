@@ -10,7 +10,7 @@ const standards = [
     desc: "Products engineered to meet recognized infrastructure and piping quality benchmarks.",
   },
   {
-    title: "SDR 11 / SDR 13.5, SSDR 9, SDR7",
+    title: "SDR 11 / SDR 13.5, SDR 9, SDR 7",
     desc: "Pressure-rated piping systems designed for long-term durability and stable performance.",
   },
   {

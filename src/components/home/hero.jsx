@@ -116,7 +116,7 @@ const Hero = () => {
               {/* <div className="absolute bottom-[-60px] md:bottom-[-40px] xl:bottom-[-20px] w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[560px] md:h-[560px] xl:w-[640px] xl:h-[640px] bg-white rounded-full"></div> */}
 
               {/* Main Image */}
-              <div className="relative z-10 hover:rotate-3 transition-all duration-300 w-[300px] sm:w-[400px] md:w-[500px] xl:w-[680px] h-[380px] md:h-[600px] xl:h-[680px]">
+              <div className="relative z-10 hover:rotate-3 transition-all duration-300 w-[300px] sm:w-[400px] md:w-[500px] xl:w-[480px] h-[380px] md:h-[600px] xl:h-[480px]">
                 <Image
                   src={HeroImg}
                   alt="Bhagvat Pipe Products"

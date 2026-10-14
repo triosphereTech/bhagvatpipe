@@ -11,7 +11,7 @@ const products = [
     title: "CPVC Pipes",
     desc: "High-performance hot & cold water piping systems engineered for durability and pressure resistance.",
     image: CPVCImg,
-    tag: "SDR 11 • SDR 13.5, SDR 9, SDR7",
+    tag: "SDR 11 • SDR 13.5, SDR 9, SDR 7",
   },
   {
     title: "UPVC Pipes",

@@ -6,7 +6,7 @@ import CPVCPipeImg from "../../../../public/Images/products/one/hero.png";
 const specifications = [
   "IS 15778",
   "SDR 11",
-  "SDR 13.5, SDR 9, SDR7",
+  "SDR 13.5, SDR 9, SDR 7",
   "SCH 40",
   "SCH 80",
   "Hot & Cold Water",

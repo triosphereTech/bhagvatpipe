@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import {
@@ -73,64 +74,72 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-x-6 gap-y-14 lg:pt-10">
 
             {/* Products */}
-            <div>
 
-              <p className="uppercase tracking-[0.2em] text-xs text-white/40 mb-7">
+{/* Products */}
+<div>
+  <p className="uppercase tracking-[0.2em] text-xs text-white/40 mb-7">
+    Products
+  </p>
 
-                Products
+  <div className="flex flex-col gap-5">
+    {[
+      {
+        label: "CPVC Plain Pipes",
+        href: "/products/cpvc-plain-fittings",
+      },
+      {
+        label: "CPVC Brass Pipes",
+        href: "/products/cpvc-brass-fittings",
+      },
+      {
+        label: "CPVC Plumbing Pipes",
+        href: "/products/cpvc-plumbing-pipe",
+      },
+      {
+        label: "SWR Ring Fits",
+        href: "/products/swr-ring-fittings",
+      },
+      {
+        label: "SWR Self Fits",
+        href: "/products/swr-self-fittings",
+      },
+    ].map((item) => (
+      <Link
+        key={item.href}
+        href={item.href}
+        className="w-fit text-left text-base sm:text-lg text-white/75 hover:text-white transition-all duration-300"
+      >
+        {item.label}
+      </Link>
+    ))}
+  </div>
+</div>
 
-              </p>
+{/* Company */}
+<div>
+  <p className="uppercase tracking-[0.2em] text-xs text-white/40 mb-7">
+    Company
+  </p>
 
-              <div className="flex flex-col gap-5">
+  <div className="flex flex-col gap-5">
+    {[
+      { label: "About Bhagvat", href: "/aboutus" },
+      { label: "Blogs", href: "/blog" },
+      { label: "Our Vision", href: "/vision" },
+      { label: "Our Mission", href: "/mission" },
+      { label: "Contact Us", href: "/contact" },
+    ].map((item) => (
+      <Link
+        key={item.href}
+        href={item.href}
+        className="w-fit text-left text-base sm:text-lg text-white/75 hover:text-white transition-all duration-300"
+      >
+        {item.label}
+      </Link>
+    ))}
+  </div>
+</div>
 
-                {[
-                  "CPVC Pipes",
-                  "UPVC Pipes",
-                  "SWR Systems",
-                  "Pipe Fittings",
-                  "Industrial Solutions",
-                ].map((item, index) => (
-                  <button
-                    key={index}
-                    className="w-fit text-left text-base sm:text-lg text-white/75 hover:text-white transition-all duration-300"
-                  >
-
-                    {item}
-
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Company */}
-            <div>
-
-              <p className="uppercase tracking-[0.2em] text-xs text-white/40 mb-7">
-
-                Company
-
-              </p>
-
-              <div className="flex flex-col gap-5">
-
-                {[
-                  "About Bhagvat",
-                  "Applications",
-                  "Technical Standards",
-                  "Distribution Network",
-                  "Contact Us",
-                ].map((item, index) => (
-                  <button
-                    key={index}
-                    className="w-fit text-left text-base sm:text-lg text-white/75 hover:text-white transition-all duration-300"
-                  >
-
-                    {item}
-
-                  </button>
-                ))}
-              </div>
-            </div>
 
             {/* Contact */}
             <div className="col-span-2 pt-6 border-t border-white/10">

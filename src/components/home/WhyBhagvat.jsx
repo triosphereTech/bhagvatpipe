@@ -25,7 +25,7 @@ const features = [
   {
     number: "SCH",
     title: "Industrial Standards",
-    desc: "Engineered with SDR 11, SDR 13.5, SDR 9, SDR7, SCH 40 & SCH 80 specifications.",
+    desc: "Engineered with SDR 11, SDR 13.5, SDR 9, SDR 7, SCH 40 & SCH 80 specifications.",
   },
 ];
 
