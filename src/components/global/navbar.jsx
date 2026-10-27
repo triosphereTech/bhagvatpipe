@@ -489,11 +489,11 @@ const Navbar = () => {
                 <div className="border-t border-black/10 pt-6 flex items-center justify-between">
                   <div>
                     <p className="text-sm text-black/40">Ahmedabad, India</p>
-                    <p className="text-sm font-medium mt-1">hello@yourbrand.com</p>
+                    <p className="text-sm font-medium mt-1">info@bhagvatpipes.com</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center text-sm">In</div>
-                    <div className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center text-sm">Ig</div>
+
+                    <Link href="https://www.instagram.com/bhagvatpipe_official/" target="_blank" className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center text-sm">Ig</Link>
                   </div>
                 </div>
               </div>
