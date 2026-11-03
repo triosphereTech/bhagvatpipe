@@ -117,10 +117,10 @@ const Hero2 = () => {
 
           {/* Headline */}
           <h1 className="w-full text-white tracking-tight leading-[1.1] text-[36px] sm:text-[48px] md:text-[60px] lg:text-[72px]">
-            <span className="block overflow-hidden">
+            <span className="block overflow-hidden pb-[0.25em] mb-[-0.25em]">
               <motion.span
                 className="block font-light"
-                initial={{ y: "110%" }}
+                initial={{ y: "140%" }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, delay: 0.35, ease }}
               >
