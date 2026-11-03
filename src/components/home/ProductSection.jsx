@@ -37,7 +37,7 @@ const products = [
 
 const ProductSection = () => {
   return (
-    <section className="w-full bg-linear-to-b from-[#8e2f6d0c] to-white px-4 pb-14 md:pb-12 overflow-hidden">
+    <section className="w-full pt-10 bg-linear-to-b from-[#8e2f6d0c] to-white px-4 pb-14 md:pb-12 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 
