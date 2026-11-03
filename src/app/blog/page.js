@@ -1,3 +1,4 @@
+import PageBanner from "@/components/global/PageBanner";
 import BlogList from "@/components/blog/bloglist";
 import { blogs } from "@/data/blogs";
 
@@ -8,7 +9,18 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  return <BlogList blogs={blogs} />;
+  return (
+    <>
+      <PageBanner
+        title="Blogs"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Blogs" },
+        ]}
+      />
+      <BlogList blogs={blogs} />
+    </>
+  );
 }
 
 

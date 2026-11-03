@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const SwrRingIntro = () => {
   return (
-    <section className="relative overflow-hidden bg-white pt-28 md:pt-32 pb-16 lg:pb-20">
+    <section className="relative overflow-hidden bg-white pt-8 md:pt-10 pb-16 lg:pb-20">
       {/* Background */}
       {/* <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#8a2967]/5 blur-3xl" />

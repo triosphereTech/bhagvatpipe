@@ -4,7 +4,7 @@ import Link from "next/link";
 const BlogList = ({ blogs }) => {
   return (
     <main className="bg-white text-[#17171a]">
-      <section className="px-5 pt-36 pb-20 sm:px-8 sm:pt-40 lg:pt-44">
+      <section className="px-5 pt-8 pb-20 sm:px-8 sm:pt-10">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8a2967]">
