@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import ProductCTAVideo from "./ProductCTAVideo";
 
 import CPVCImg from "../../../public/Images/home/cpvc.png";
 import UPVCImg from "../../../public/Images/home/Upvcpipe.png";
@@ -155,55 +157,86 @@ const ProductSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 bg-white rounded-[32px] p-7 sm:p-10 border border-black/5">
+        <div className="relative mt-12 lg:mt-28 rounded-[32px] bg-linear-to-br from-[#fbf4f8] via-white to-[#f5edf2] border border-[#8a2967]/10 p-4 sm:p-6 lg:p-10 overflow-hidden lg:overflow-visible">
 
-          <div>
-
-            <p className="uppercase tracking-[0.2em] text-xs text-black/40 mb-3">
-              Industrial Grade Quality
-            </p>
-
-            <h3 className="text-3xl sm:text-4xl font-semibold  text-black">
-
-              Trusted Piping Systems
-              <br className="hidden sm:block" />
-
-              Built For Modern Infrastructure
-
-            </h3>
+          {/* Decorative */}
+          <div className="absolute inset-0 rounded-[32px] overflow-hidden pointer-events-none">
+            <div className="absolute -top-24 right-10 w-[360px] h-[360px] rounded-full bg-[#8a2967]/8 blur-3xl"></div>
+            <div className="absolute -bottom-32 left-1/3 w-[300px] h-[300px] rounded-full bg-[#e08bc2]/15 blur-3xl"></div>
+            <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,#8a2967_1px,transparent_1px),linear-gradient(to_bottom,#8a2967_1px,transparent_1px)] bg-size-[40px_40px]"></div>
           </div>
 
-          <a
-  href="/Doc/Bhagvat.pdf"
-  download="Bhagvat-Pipes-Catalogue.pdf"
-  className="
-    inline-flex
-    h-12
-    w-fit
-    items-center
-    justify-center
-    gap-2
-    rounded-full
-    border
-    border-[#8a2967]
-    bg-[#8a2967]
-    px-7 sm:px-8
-    text-sm sm:text-base
-    font-medium
-    text-white
-    whitespace-nowrap
-    shadow-sm
-    transition-all
-    duration-300
-    hover:-translate-y-0.5
-    hover:bg-[#722055]
-    hover:border-[#722055]
-    hover:shadow-md
-    active:translate-y-0
-  "
->
-  Download Catalogue
-</a>
+          <div className="relative grid lg:grid-cols-[260px_1fr] xl:grid-cols-[280px_1fr] gap-8 lg:gap-12 items-end">
+
+            {/* Left: Video (pops out of the card on desktop) */}
+            <div className="relative lg:-mt-28">
+              <ProductCTAVideo
+                src="/videos/Bhagvat_F6.mp4"
+                className="w-full aspect-4/5 sm:aspect-video lg:aspect-9/16 rounded-3xl ring-4 ring-white shadow-[0_30px_60px_rgba(138,41,103,0.25)]"
+              />
+            </div>
+
+            {/* Right: Content */}
+            <div className="text-black px-2 sm:px-0 pb-2">
+
+              {/* Heading row */}
+              <div className="grid xl:grid-cols-[1.2fr_1fr] gap-4 xl:gap-10 xl:items-end">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-6 h-px bg-[#8a2967]/50"></div>
+                    <p className="uppercase tracking-[0.2em] text-xs text-[#8a2967] font-medium">
+                      Industrial Grade Quality
+                    </p>
+                  </div>
+                  <h3 className="text-[26px] sm:text-3xl lg:text-[38px] leading-[1.12] font-semibold">
+                    Trusted Piping Systems
+                    <br className="hidden sm:block" />
+                    {" "}Built For <span className="text-[#8a2967]">Modern Infrastructure</span>
+                  </h3>
+                </div>
+
+                <p className="text-[14px] md:text-[15px] leading-relaxed text-black/60">
+                  Our complete range of CPVC, UPVC and SWR pipes and fittings
+                  with sizes, pressure classes and technical specifications,
+                  all in one catalogue.
+                </p>
+              </div>
+
+              {/* Product spec tiles */}
+              <div className="mt-8 grid grid-cols-2 xl:grid-cols-4 gap-3">
+                {products.map((item) => (
+                  <div
+                    key={item.title}
+                    className="rounded-2xl bg-white border border-black/5 p-4 hover:border-[#8a2967]/25 hover:shadow-[0_10px_30px_rgba(138,41,103,0.08)] transition-all duration-300"
+                  >
+                    <p className="text-sm font-semibold">{item.title}</p>
+                    <p className="mt-1 text-[11px] leading-snug text-black/50">{item.tag}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Buttons */}
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <a
+                  href="/Doc/Bhagvat.pdf"
+                  download="Bhagvat-Pipes-Catalogue.pdf"
+                  className="inline-flex h-12 w-fit items-center justify-center gap-2 rounded-full bg-[#8a2967] px-7 sm:px-8 text-sm sm:text-base font-medium text-white hover:bg-[#722055] whitespace-nowrap shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14" />
+                  </svg>
+                  Download Catalogue
+                </a>
+
+                <Link
+                  href="/contact"
+                  className="inline-flex h-12 items-center rounded-full border border-black/10 bg-white px-6 text-sm sm:text-base font-medium text-black hover:bg-black hover:text-white transition-all duration-300"
+                >
+                  Talk to Our Team
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

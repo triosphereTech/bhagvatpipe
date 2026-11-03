@@ -297,18 +297,7 @@ const CPVCSEOSection = () => {
           {seoCategories.map((category) => (
             <div
               key={category.title}
-              className="
-                rounded-2xl
-                border
-                border-black/[0.08]
-                bg-[#faf9fb]
-                p-5
-                sm:p-7
-                transition-all
-                duration-300
-                hover:border-[#8a2967]/20
-              "
-            >
+              className="rounded-2xl border border-black/[0.08] bg-[#faf9fb] p-5 sm:p-7 transition-all duration-300 hover:border-[#8a2967]/20">
               <h3 className="text-lg font-semibold text-black sm:text-xl">
                 {category.title}
               </h3>
@@ -321,23 +310,7 @@ const CPVCSEOSection = () => {
                 {category.keywords.map((keyword, index) => (
                   <span
                     key={`${category.title}-${index}`}
-                    className="
-                      rounded-full
-                      border
-                      border-black/[0.08]
-                      bg-white
-                      px-3
-                      py-2
-                      text-xs
-                      leading-4
-                      text-black/70
-                      transition-colors
-                      duration-200
-                      hover:border-[#8a2967]/30
-                      hover:bg-[#8a2967]/[0.04]
-                      hover:text-[#8a2967]
-                    "
-                  >
+                    className="rounded-full border border-black/[0.08] bg-white px-3 py-2 text-xs leading-4 text-black/70 transition-colors duration-200 hover:border-[#8a2967]/30 hover:bg-[#8a2967]/[0.04] hover:text-[#8a2967]">
                     {keyword}
                   </span>
                 ))}

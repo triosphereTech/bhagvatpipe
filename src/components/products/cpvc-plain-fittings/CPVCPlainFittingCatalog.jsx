@@ -93,12 +93,12 @@ const products =
   {
     "title": "Cross Tee",
     "desc": "Four-way fitting used to distribute water flow in multiple directions.",
-    "img": "/Images/products/cpvc/plain/CROSSTEE.png"
+    "img": "/Images/products/cpvc/plain/CrossTee.jpeg"
   },
      {
     "title": "Reducer Coupler",
     "desc": "Joins different pipe sizes while maintaining smooth flow.",
-    "img": "/Images/products/cpvc/plain/REDUCERCOUPLER.jpeg"
+    "img": "/Images/products/cpvc/plain/ReducerCoupler.jpeg"
   },
   {
     "title": "Reducer Bush",

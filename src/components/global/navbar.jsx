@@ -157,12 +157,10 @@ const Navbar = () => {
 
       {/* Main Nav */}
       <nav
-        className={`fixed left-0 w-full z-50 px-4 md:px-8 transition-all duration-500 ${
-          hideTopStrip ? "top-0 pt-4" : "top-0 pt-14"
+        className={`fixed left-0 w-full z-50 px-4 md:px-8 bg-white border-b border-black/5 shadow-[0_2px_16px_rgba(0,0,0,0.04)] transition-all duration-500 ${
+          hideTopStrip ? "top-0" : "top-9"
         }`}
       >
-        {/* Glass Blur Fade */}
-        <div className="absolute inset-x-0 top-0 h-40 bg-white/65 backdrop-blur-3xl pointer-events-none [mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_45%,rgba(0,0,0,0)_100%)] [-webkit-mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_45%,rgba(0,0,0,0)_100%)]" />
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 rounded-full px-4 md:px-6 h-16 flex items-center justify-between">
             {/* Logo */}
